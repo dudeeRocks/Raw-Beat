@@ -61,8 +61,9 @@ struct ContentView: View {
         }
         
         var tapForHint: some Gesture {
-            TapGesture()
-                .onEnded {
+            SpatialTapGesture(coordinateSpace: .global)
+                .onEnded { tap in
+                    handleTap(at: tap.location)
                     withAnimation(Animations.hint) {
                         sharedData.showLongPressHintIfNeeded()
                     }
