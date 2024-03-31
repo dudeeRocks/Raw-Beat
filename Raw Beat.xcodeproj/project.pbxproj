@@ -14,6 +14,49 @@
 		633B591A2BB9810100065CD7 /* Raw_BeatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59192BB9810100065CD7 /* Raw_BeatTests.swift */; };
 		633B59242BB9810100065CD7 /* Raw_BeatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59232BB9810100065CD7 /* Raw_BeatUITests.swift */; };
 		633B59262BB9810100065CD7 /* Raw_BeatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59252BB9810100065CD7 /* Raw_BeatUITestsLaunchTests.swift */; };
+		633B59882BB985AA00065CD7 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59832BB985A900065CD7 /* Sound.swift */; };
+		633B59892BB985AA00065CD7 /* MetronomeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59842BB985A900065CD7 /* MetronomeDelegate.swift */; };
+		633B598A2BB985AA00065CD7 /* MetronomeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59852BB985A900065CD7 /* MetronomeError.swift */; };
+		633B598B2BB985AA00065CD7 /* TimeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59862BB985A900065CD7 /* TimeSignature.swift */; };
+		633B598C2BB985AA00065CD7 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59872BB985AA00065CD7 /* Metronome.swift */; };
+		633B59942BB9865900065CD7 /* kickDown.aif in Resources */ = {isa = PBXBuildFile; fileRef = 633B598E2BB9865800065CD7 /* kickDown.aif */; };
+		633B59952BB9865900065CD7 /* hihatUp.aif in Resources */ = {isa = PBXBuildFile; fileRef = 633B598F2BB9865800065CD7 /* hihatUp.aif */; };
+		633B59962BB9865900065CD7 /* hihatDown.aif in Resources */ = {isa = PBXBuildFile; fileRef = 633B59902BB9865900065CD7 /* hihatDown.aif */; };
+		633B59972BB9865900065CD7 /* kickUp.aif in Resources */ = {isa = PBXBuildFile; fileRef = 633B59912BB9865900065CD7 /* kickUp.aif */; };
+		633B59982BB9865900065CD7 /* tickDown.aif in Resources */ = {isa = PBXBuildFile; fileRef = 633B59922BB9865900065CD7 /* tickDown.aif */; };
+		633B59992BB9865900065CD7 /* tickUp.aif in Resources */ = {isa = PBXBuildFile; fileRef = 633B59932BB9865900065CD7 /* tickUp.aif */; };
+		633B599B2BB9876900065CD7 /* HapticsPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B599A2BB9876900065CD7 /* HapticsPlayer.swift */; };
+		633B59A72BB9883800065CD7 /* CircleToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59A12BB9883700065CD7 /* CircleToggle.swift */; };
+		633B59A82BB9883800065CD7 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59A22BB9883700065CD7 /* PlayButton.swift */; };
+		633B59A92BB9883800065CD7 /* SymbolContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59A32BB9883800065CD7 /* SymbolContainer.swift */; };
+		633B59AA2BB9883800065CD7 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59A42BB9883800065CD7 /* CircleButton.swift */; };
+		633B59AB2BB9883800065CD7 /* ButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59A52BB9883800065CD7 /* ButtonBar.swift */; };
+		633B59AC2BB9883800065CD7 /* ButtonBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59A62BB9883800065CD7 /* ButtonBackground.swift */; };
+		633B59B12BB9886200065CD7 /* TempoMarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59AD2BB9886100065CD7 /* TempoMarking.swift */; };
+		633B59B22BB9886200065CD7 /* TempoField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59AE2BB9886200065CD7 /* TempoField.swift */; };
+		633B59B32BB9886200065CD7 /* TempoScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59AF2BB9886200065CD7 /* TempoScroll.swift */; };
+		633B59B42BB9886200065CD7 /* TempoText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59B02BB9886200065CD7 /* TempoText.swift */; };
+		633B59B82BB9887A00065CD7 /* ParticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59B52BB9887900065CD7 /* ParticleView.swift */; };
+		633B59B92BB9887A00065CD7 /* TouchVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59B62BB9887A00065CD7 /* TouchVisualizer.swift */; };
+		633B59BA2BB9887A00065CD7 /* BeatsVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59B72BB9887A00065CD7 /* BeatsVisualizer.swift */; };
+		633B59BD2BB9889200065CD7 /* Hint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59BB2BB9889200065CD7 /* Hint.swift */; };
+		633B59BE2BB9889200065CD7 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59BC2BB9889200065CD7 /* ErrorMessage.swift */; };
+		633B59C62BB988C500065CD7 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59C02BB988C400065CD7 /* Animations.swift */; };
+		633B59C72BB988C500065CD7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59C12BB988C500065CD7 /* Colors.swift */; };
+		633B59C82BB988C500065CD7 /* GlobalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59C22BB988C500065CD7 /* GlobalProperties.swift */; };
+		633B59C92BB988C500065CD7 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59C32BB988C500065CD7 /* SharedData.swift */; };
+		633B59CA2BB988C500065CD7 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59C42BB988C500065CD7 /* Styles.swift */; };
+		633B59CB2BB988C500065CD7 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59C52BB988C500065CD7 /* Modifiers.swift */; };
+		633B59D32BB9891500065CD7 /* Tap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59CE2BB9891400065CD7 /* Tap.swift */; };
+		633B59D42BB9891500065CD7 /* Particle+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59CF2BB9891500065CD7 /* Particle+Animations.swift */; };
+		633B59D52BB9891500065CD7 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59D02BB9891500065CD7 /* Particle.swift */; };
+		633B59D62BB9891500065CD7 /* Pulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59D12BB9891500065CD7 /* Pulse.swift */; };
+		633B59D72BB9891500065CD7 /* Beat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59D22BB9891500065CD7 /* Beat.swift */; };
+		633B59DA2BB9893900065CD7 /* BeatsParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59D82BB9893900065CD7 /* BeatsParticleSystem.swift */; };
+		633B59DB2BB9893900065CD7 /* TouchPaticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59D92BB9893900065CD7 /* TouchPaticleSystem.swift */; };
+		633B59DD2BB9899700065CD7 /* ViewIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59DC2BB9899700065CD7 /* ViewIdentifiers.swift */; };
+		633B59DF2BB989A100065CD7 /* ViewIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59DC2BB9899700065CD7 /* ViewIdentifiers.swift */; };
+		633B59E12BB989E100065CD7 /* CirclePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59E02BB989E100065CD7 /* CirclePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +87,49 @@
 		633B591F2BB9810100065CD7 /* Raw BeatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Raw BeatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		633B59232BB9810100065CD7 /* Raw_BeatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raw_BeatUITests.swift; sourceTree = "<group>"; };
 		633B59252BB9810100065CD7 /* Raw_BeatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raw_BeatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		633B59812BB984EE00065CD7 /* Raw-Beat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Raw-Beat-Info.plist"; sourceTree = SOURCE_ROOT; };
+		633B59832BB985A900065CD7 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		633B59842BB985A900065CD7 /* MetronomeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeDelegate.swift; sourceTree = "<group>"; };
+		633B59852BB985A900065CD7 /* MetronomeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeError.swift; sourceTree = "<group>"; };
+		633B59862BB985A900065CD7 /* TimeSignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSignature.swift; sourceTree = "<group>"; };
+		633B59872BB985AA00065CD7 /* Metronome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
+		633B598E2BB9865800065CD7 /* kickDown.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = kickDown.aif; sourceTree = "<group>"; };
+		633B598F2BB9865800065CD7 /* hihatUp.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = hihatUp.aif; sourceTree = "<group>"; };
+		633B59902BB9865900065CD7 /* hihatDown.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = hihatDown.aif; sourceTree = "<group>"; };
+		633B59912BB9865900065CD7 /* kickUp.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = kickUp.aif; sourceTree = "<group>"; };
+		633B59922BB9865900065CD7 /* tickDown.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = tickDown.aif; sourceTree = "<group>"; };
+		633B59932BB9865900065CD7 /* tickUp.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = tickUp.aif; sourceTree = "<group>"; };
+		633B599A2BB9876900065CD7 /* HapticsPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticsPlayer.swift; sourceTree = "<group>"; };
+		633B59A12BB9883700065CD7 /* CircleToggle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleToggle.swift; sourceTree = "<group>"; };
+		633B59A22BB9883700065CD7 /* PlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		633B59A32BB9883800065CD7 /* SymbolContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolContainer.swift; sourceTree = "<group>"; };
+		633B59A42BB9883800065CD7 /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		633B59A52BB9883800065CD7 /* ButtonBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonBar.swift; sourceTree = "<group>"; };
+		633B59A62BB9883800065CD7 /* ButtonBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonBackground.swift; sourceTree = "<group>"; };
+		633B59AD2BB9886100065CD7 /* TempoMarking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempoMarking.swift; sourceTree = "<group>"; };
+		633B59AE2BB9886200065CD7 /* TempoField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempoField.swift; sourceTree = "<group>"; };
+		633B59AF2BB9886200065CD7 /* TempoScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempoScroll.swift; sourceTree = "<group>"; };
+		633B59B02BB9886200065CD7 /* TempoText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempoText.swift; sourceTree = "<group>"; };
+		633B59B52BB9887900065CD7 /* ParticleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleView.swift; sourceTree = "<group>"; };
+		633B59B62BB9887A00065CD7 /* TouchVisualizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchVisualizer.swift; sourceTree = "<group>"; };
+		633B59B72BB9887A00065CD7 /* BeatsVisualizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatsVisualizer.swift; sourceTree = "<group>"; };
+		633B59BB2BB9889200065CD7 /* Hint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hint.swift; sourceTree = "<group>"; };
+		633B59BC2BB9889200065CD7 /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		633B59C02BB988C400065CD7 /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		633B59C12BB988C500065CD7 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		633B59C22BB988C500065CD7 /* GlobalProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalProperties.swift; sourceTree = "<group>"; };
+		633B59C32BB988C500065CD7 /* SharedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		633B59C42BB988C500065CD7 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		633B59C52BB988C500065CD7 /* Modifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		633B59CE2BB9891400065CD7 /* Tap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tap.swift; sourceTree = "<group>"; };
+		633B59CF2BB9891500065CD7 /* Particle+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Particle+Animations.swift"; sourceTree = "<group>"; };
+		633B59D02BB9891500065CD7 /* Particle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
+		633B59D12BB9891500065CD7 /* Pulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulse.swift; sourceTree = "<group>"; };
+		633B59D22BB9891500065CD7 /* Beat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beat.swift; sourceTree = "<group>"; };
+		633B59D82BB9893900065CD7 /* BeatsParticleSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatsParticleSystem.swift; sourceTree = "<group>"; };
+		633B59D92BB9893900065CD7 /* TouchPaticleSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchPaticleSystem.swift; sourceTree = "<group>"; };
+		633B59DC2BB9899700065CD7 /* ViewIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIdentifiers.swift; sourceTree = "<group>"; };
+		633B59E02BB989E100065CD7 /* CirclePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +160,7 @@
 		633B58FC2BB980FD00065CD7 = {
 			isa = PBXGroup;
 			children = (
+				633B59DC2BB9899700065CD7 /* ViewIdentifiers.swift */,
 				633B59072BB980FD00065CD7 /* Raw Beat */,
 				633B59182BB9810100065CD7 /* Raw BeatTests */,
 				633B59222BB9810100065CD7 /* Raw BeatUITests */,
@@ -94,8 +181,15 @@
 		633B59072BB980FD00065CD7 /* Raw Beat */ = {
 			isa = PBXGroup;
 			children = (
+				633B59812BB984EE00065CD7 /* Raw-Beat-Info.plist */,
 				633B59082BB980FD00065CD7 /* Raw_BeatApp.swift */,
 				633B590A2BB980FD00065CD7 /* ContentView.swift */,
+				633B599A2BB9876900065CD7 /* HapticsPlayer.swift */,
+				633B599C2BB9878300065CD7 /* Views */,
+				633B59BF2BB988A300065CD7 /* Shared */,
+				633B59822BB9855400065CD7 /* Metronome */,
+				633B59CC2BB988D300065CD7 /* ParticleSystems */,
+				633B598D2BB9863300065CD7 /* Sounds */,
 				633B590C2BB9810000065CD7 /* Assets.xcassets */,
 				633B590E2BB9810000065CD7 /* Preview Content */,
 			);
@@ -125,6 +219,121 @@
 				633B59252BB9810100065CD7 /* Raw_BeatUITestsLaunchTests.swift */,
 			);
 			path = "Raw BeatUITests";
+			sourceTree = "<group>";
+		};
+		633B59822BB9855400065CD7 /* Metronome */ = {
+			isa = PBXGroup;
+			children = (
+				633B59872BB985AA00065CD7 /* Metronome.swift */,
+				633B59842BB985A900065CD7 /* MetronomeDelegate.swift */,
+				633B59852BB985A900065CD7 /* MetronomeError.swift */,
+				633B59832BB985A900065CD7 /* Sound.swift */,
+				633B59862BB985A900065CD7 /* TimeSignature.swift */,
+			);
+			path = Metronome;
+			sourceTree = "<group>";
+		};
+		633B598D2BB9863300065CD7 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				633B59902BB9865900065CD7 /* hihatDown.aif */,
+				633B598F2BB9865800065CD7 /* hihatUp.aif */,
+				633B598E2BB9865800065CD7 /* kickDown.aif */,
+				633B59912BB9865900065CD7 /* kickUp.aif */,
+				633B59922BB9865900065CD7 /* tickDown.aif */,
+				633B59932BB9865900065CD7 /* tickUp.aif */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		633B599C2BB9878300065CD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				633B599D2BB987A300065CD7 /* Buttons */,
+				633B599F2BB987F000065CD7 /* Tempo */,
+				633B599E2BB987DA00065CD7 /* Visualizers */,
+				633B59A02BB987FF00065CD7 /* Misc */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		633B599D2BB987A300065CD7 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				633B59E02BB989E100065CD7 /* CirclePicker.swift */,
+				633B59A62BB9883800065CD7 /* ButtonBackground.swift */,
+				633B59A52BB9883800065CD7 /* ButtonBar.swift */,
+				633B59A42BB9883800065CD7 /* CircleButton.swift */,
+				633B59A12BB9883700065CD7 /* CircleToggle.swift */,
+				633B59A22BB9883700065CD7 /* PlayButton.swift */,
+				633B59A32BB9883800065CD7 /* SymbolContainer.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		633B599E2BB987DA00065CD7 /* Visualizers */ = {
+			isa = PBXGroup;
+			children = (
+				633B59B72BB9887A00065CD7 /* BeatsVisualizer.swift */,
+				633B59B52BB9887900065CD7 /* ParticleView.swift */,
+				633B59B62BB9887A00065CD7 /* TouchVisualizer.swift */,
+			);
+			path = Visualizers;
+			sourceTree = "<group>";
+		};
+		633B599F2BB987F000065CD7 /* Tempo */ = {
+			isa = PBXGroup;
+			children = (
+				633B59AE2BB9886200065CD7 /* TempoField.swift */,
+				633B59AD2BB9886100065CD7 /* TempoMarking.swift */,
+				633B59AF2BB9886200065CD7 /* TempoScroll.swift */,
+				633B59B02BB9886200065CD7 /* TempoText.swift */,
+			);
+			path = Tempo;
+			sourceTree = "<group>";
+		};
+		633B59A02BB987FF00065CD7 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				633B59BC2BB9889200065CD7 /* ErrorMessage.swift */,
+				633B59BB2BB9889200065CD7 /* Hint.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		633B59BF2BB988A300065CD7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				633B59C02BB988C400065CD7 /* Animations.swift */,
+				633B59C12BB988C500065CD7 /* Colors.swift */,
+				633B59C22BB988C500065CD7 /* GlobalProperties.swift */,
+				633B59C52BB988C500065CD7 /* Modifiers.swift */,
+				633B59C32BB988C500065CD7 /* SharedData.swift */,
+				633B59C42BB988C500065CD7 /* Styles.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		633B59CC2BB988D300065CD7 /* ParticleSystems */ = {
+			isa = PBXGroup;
+			children = (
+				633B59D82BB9893900065CD7 /* BeatsParticleSystem.swift */,
+				633B59D92BB9893900065CD7 /* TouchPaticleSystem.swift */,
+				633B59CD2BB988E400065CD7 /* Particles */,
+			);
+			path = ParticleSystems;
+			sourceTree = "<group>";
+		};
+		633B59CD2BB988E400065CD7 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				633B59D22BB9891500065CD7 /* Beat.swift */,
+				633B59D02BB9891500065CD7 /* Particle.swift */,
+				633B59CF2BB9891500065CD7 /* Particle+Animations.swift */,
+				633B59D12BB9891500065CD7 /* Pulse.swift */,
+				633B59CE2BB9891400065CD7 /* Tap.swift */,
+			);
+			path = Particles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +440,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				633B59992BB9865900065CD7 /* tickUp.aif in Resources */,
+				633B59982BB9865900065CD7 /* tickDown.aif in Resources */,
+				633B59952BB9865900065CD7 /* hihatUp.aif in Resources */,
+				633B59962BB9865900065CD7 /* hihatDown.aif in Resources */,
 				633B59102BB9810000065CD7 /* Preview Assets.xcassets in Resources */,
 				633B590D2BB9810000065CD7 /* Assets.xcassets in Resources */,
+				633B59942BB9865900065CD7 /* kickDown.aif in Resources */,
+				633B59972BB9865900065CD7 /* kickUp.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +473,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				633B590B2BB980FD00065CD7 /* ContentView.swift in Sources */,
+				633B59A82BB9883800065CD7 /* PlayButton.swift in Sources */,
+				633B59882BB985AA00065CD7 /* Sound.swift in Sources */,
+				633B59AA2BB9883800065CD7 /* CircleButton.swift in Sources */,
+				633B59B22BB9886200065CD7 /* TempoField.swift in Sources */,
+				633B59B92BB9887A00065CD7 /* TouchVisualizer.swift in Sources */,
+				633B59D62BB9891500065CD7 /* Pulse.swift in Sources */,
+				633B59C72BB988C500065CD7 /* Colors.swift in Sources */,
+				633B59B12BB9886200065CD7 /* TempoMarking.swift in Sources */,
+				633B59D42BB9891500065CD7 /* Particle+Animations.swift in Sources */,
+				633B59CB2BB988C500065CD7 /* Modifiers.swift in Sources */,
+				633B59AB2BB9883800065CD7 /* ButtonBar.swift in Sources */,
+				633B59AC2BB9883800065CD7 /* ButtonBackground.swift in Sources */,
+				633B59DB2BB9893900065CD7 /* TouchPaticleSystem.swift in Sources */,
+				633B598A2BB985AA00065CD7 /* MetronomeError.swift in Sources */,
+				633B59BE2BB9889200065CD7 /* ErrorMessage.swift in Sources */,
+				633B598C2BB985AA00065CD7 /* Metronome.swift in Sources */,
+				633B59A92BB9883800065CD7 /* SymbolContainer.swift in Sources */,
+				633B59A72BB9883800065CD7 /* CircleToggle.swift in Sources */,
+				633B59CA2BB988C500065CD7 /* Styles.swift in Sources */,
+				633B59C62BB988C500065CD7 /* Animations.swift in Sources */,
+				633B59B42BB9886200065CD7 /* TempoText.swift in Sources */,
 				633B59092BB980FD00065CD7 /* Raw_BeatApp.swift in Sources */,
+				633B59C92BB988C500065CD7 /* SharedData.swift in Sources */,
+				633B59892BB985AA00065CD7 /* MetronomeDelegate.swift in Sources */,
+				633B59E12BB989E100065CD7 /* CirclePicker.swift in Sources */,
+				633B59B82BB9887A00065CD7 /* ParticleView.swift in Sources */,
+				633B59D72BB9891500065CD7 /* Beat.swift in Sources */,
+				633B598B2BB985AA00065CD7 /* TimeSignature.swift in Sources */,
+				633B599B2BB9876900065CD7 /* HapticsPlayer.swift in Sources */,
+				633B59DA2BB9893900065CD7 /* BeatsParticleSystem.swift in Sources */,
+				633B59B32BB9886200065CD7 /* TempoScroll.swift in Sources */,
+				633B59BD2BB9889200065CD7 /* Hint.swift in Sources */,
+				633B59D32BB9891500065CD7 /* Tap.swift in Sources */,
+				633B59D52BB9891500065CD7 /* Particle.swift in Sources */,
+				633B59DD2BB9899700065CD7 /* ViewIdentifiers.swift in Sources */,
+				633B59BA2BB9887A00065CD7 /* BeatsVisualizer.swift in Sources */,
+				633B59C82BB988C500065CD7 /* GlobalProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +526,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				633B59262BB9810100065CD7 /* Raw_BeatUITestsLaunchTests.swift in Sources */,
+				633B59DF2BB989A100065CD7 /* ViewIdentifiers.swift in Sources */,
 				633B59242BB9810100065CD7 /* Raw_BeatUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,11 +677,15 @@
 				DEVELOPMENT_TEAM = 3848NBBLP6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Raw-Beat-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Raw Beat";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +710,15 @@
 				DEVELOPMENT_TEAM = 3848NBBLP6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Raw-Beat-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Raw Beat";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
