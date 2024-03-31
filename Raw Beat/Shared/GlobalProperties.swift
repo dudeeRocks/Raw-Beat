@@ -3,7 +3,8 @@
 import SwiftUI
 
 struct GlobalProperties {
-    static let longPressDuration: CGFloat = 0.3
+    static let longPressDuration: Double = 0.3
+    static let fteDuration: Double = 5.0
     
     struct Scroll {
         static let visibleScrollItems: Int = 20

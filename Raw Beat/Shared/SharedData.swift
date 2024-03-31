@@ -12,13 +12,7 @@ struct SharedData {
     var errorMessage: ErrorMessage = .none
     
     var newTempo: Int = 0
-    var oldTempo: Int = 0 {
-        didSet {
-            lastUpdate = Date.timeIntervalSinceReferenceDate
-        }
-    }
-    
-    var lastUpdate: Double = 0.0
+    var oldTempo: Int = 0
     
     var isFieldShaking: Bool = false
     var tempoFieldTaps: Int = 0

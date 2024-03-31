@@ -28,7 +28,7 @@ struct Hint: View {
                     case .none:
                         return
                     case .firstTimeExperience:
-                        resetHintAfter(seconds: 5)
+                        resetHintAfter(seconds: GlobalProperties.fteDuration)
                     case .volumeOff:
                         resetHintAfter(seconds: 3)
                     default:

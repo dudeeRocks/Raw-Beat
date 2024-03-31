@@ -13,11 +13,9 @@ struct TempoScroll: View {
     @Environment(\.colorScheme) private var colorScheme
     private var isDarkMode: Bool { colorScheme == .dark }
     
-    @State private var isScrolling: Bool = false {
-        didSet {
-            hideScrollView(after: GlobalProperties.Scroll.timeToHide)
-        }
-    }
+    @State private var isShowingScroll: Bool = false
+    
+    @State private var lastScrollTime: Double = 0
     
     private var itemHeight: CGFloat {
         sharedData.scrollItemHeight
@@ -62,7 +60,7 @@ struct TempoScroll: View {
                                 Color.clear.preference(key: ScrollPosition.self, value: proxy.frame(in: .named(coordinateSpaceName)).origin.y.rounded())
                             }
                         }
-                        .modifier(Opacity(state: $isScrolling))
+                        .modifier(Opacity(state: $isShowingScroll))
                         .onPreferenceChange(ScrollPosition.self) { value in
                             updateScroll(with: value)
                         }
@@ -70,6 +68,7 @@ struct TempoScroll: View {
                     .coordinateSpace(name: coordinateSpaceName)
                     .onAppear {
                         prepareScrollProxy(scrollViewProxy)
+                        revealScroll(for: GlobalProperties.fteDuration)
                     }
                     .accessibilityRepresentation {
                         let sliderRange: ClosedRange<Double> = {
@@ -125,11 +124,7 @@ struct TempoScroll: View {
             return
         }
         
-        if !isScrolling {
-            withAnimation(Animations.scroll) {
-                isScrolling = true
-            }
-        }
+        revealScroll(for: GlobalProperties.Scroll.timeToHide)
         
         let invertedValue: CGFloat = -value
         let selectedTempo: CGFloat = invertedValue / itemHeight
@@ -141,6 +136,15 @@ struct TempoScroll: View {
             sharedData.newTempo = adjustedTempo
             submitTempo()
             sharedData.setTempoName(to: metronome.tempo)
+        }
+    }
+    
+    private func revealScroll(for duration: Double) {
+        if !isShowingScroll {
+            withAnimation(Animations.scroll) {
+                isShowingScroll = true
+                hideScrollView(after: duration)
+            }
         }
     }
     
@@ -157,14 +161,17 @@ struct TempoScroll: View {
     }
     
     private func hideScrollView(after timeLimit: Double) {
-        if !isScrolling { return }
+        if !isShowingScroll { return }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + timeLimit) {
+        Task(priority: .userInitiated) {
+            try await Task.sleep(for: .seconds(timeLimit))
+            
             let now: Double = Date.timeIntervalSinceReferenceDate
-            let timeSinceLastUpdate: Double = now - sharedData.lastUpdate
+            let timeSinceLastUpdate: Double = now - lastScrollTime
             if timeSinceLastUpdate >= timeLimit {
                 withAnimation(.easeIn) {
-                    isScrolling = false
+                    isShowingScroll = false
+                    lastScrollTime = now
                 }
             } else {
                 hideScrollView(after: timeLimit)
@@ -178,11 +185,7 @@ struct TempoScroll: View {
             return
         }
         
-        if !isScrolling {
-            withAnimation(Animations.scroll) {
-                isScrolling = true
-            }
-        }
+        revealScroll(for: GlobalProperties.Scroll.timeToHide)
         
         let convertedValue: Int = Int(value)
         
