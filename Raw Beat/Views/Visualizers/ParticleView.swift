@@ -79,7 +79,7 @@ struct ParticleView: View {
     
     @ViewBuilder private func createBeatView() -> some View {
         Circle()
-            .strokeBorder(color, lineWidth: 1, antialiased: true)
+            .strokeBorder(color, lineWidth: 2, antialiased: true)
             .frame(width: size)
             .scaleEffect(scale, anchor: .center)
             .opacity(opacity)

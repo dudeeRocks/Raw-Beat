@@ -20,7 +20,7 @@ struct Beat: Particle {
     var isUpBeat: Bool
     
     private let scaleMin: Double = 1.0
-    private let scaleMax: Double = 1.8
+    private let scaleMax: Double = 2.0
     
     private let opacityMin: Double = 0.0
     private let opacityMax: Double = 1.0
@@ -42,8 +42,8 @@ struct Beat: Particle {
         let timeSinceCreation: Double = currentTime - creationTime
         let normalizedTime: Double = timeSinceCreation / lifetime
         
-        scale = cubicAnimation(time: normalizedTime, p0: scaleMin, p1: scaleMax / 2, p2: scaleMax, p3: scaleMax - scaleMin / 2)
-        opacity = quadraticAnimation(time: normalizedTime, from: opacityMax, to: opacityMin)
+        scale = quadraticAnimation(time: normalizedTime, from: scaleMin, to: scaleMax)
+        opacity = cubicAnimation(time: normalizedTime, p0: opacityMin, p1: opacityMax, p2: opacityMin, p3: opacityMin)
         
         if currentTime >= creationTime + lifetime {
             didFinishAnimation = true

@@ -32,10 +32,10 @@ struct Tap: Particle {
         if didFinishAnimation { return }
         
         let timeSinceCreation: Double = currentTime - creationTime
-        let normilizedTime: Double = timeSinceCreation / lifetime
+        let normalizedTime: Double = timeSinceCreation / lifetime
         
-        scale = cubicAnimation(time: normilizedTime, p0: scaleMin, p1: scaleMax / 2, p2: scaleMax, p3: scaleMax / 4)
-        opacity = cubicAnimation(time: normilizedTime, p0: opacityMin, p1: opacityMax, p2: opacityMax / 2, p3: opacityMin)
+        scale = quadraticAnimation(time: normalizedTime, from: scaleMin, to: scaleMax)
+        opacity = cubicAnimation(time: normalizedTime, p0: opacityMin, p1: opacityMax, p2: opacityMin, p3: opacityMin)
         
         if currentTime > creationTime + lifetime { didFinishAnimation = true }
     }
