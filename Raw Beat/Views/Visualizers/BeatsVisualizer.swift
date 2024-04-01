@@ -9,10 +9,16 @@ struct BeatsVisualizer: View {
     
     private var isPlaying: Bool { metronome.isPlaying }
     
+    @State private var lastPickerState: SharedData.PickerState = .none
+    
+    private var isShown: Bool {
+        sharedData.pickerState == lastPickerState
+    }
+    
     // MARK: - Body
     
     var body: some View {
-        if isPlaying {
+        if isPlaying && isShown {
             TimelineView(.animation) { timeline in
                 Canvas { context, _ in
                     let currentTime: Double = CACurrentMediaTime()
@@ -31,6 +37,7 @@ struct BeatsVisualizer: View {
             .ignoresSafeArea()
             .onDisappear {
                 model.beats = []
+                updateLastPickerState(after: 0.3)
             }
         }
     }
@@ -104,5 +111,12 @@ struct BeatsVisualizer: View {
         }
         
         return result
+    }
+    
+    private func updateLastPickerState(after time: TimeInterval) {
+        Task(priority: .userInitiated) {
+            try await Task.sleep(for: .seconds(time))
+            lastPickerState = sharedData.pickerState
+        }
     }
 }
