@@ -110,15 +110,19 @@ struct ContentView: View {
                         .accessibilityIdentifier(ViewIdentifiers.tempoScroll.rawValue)
                     
                     ZStack {
+                       
                         if sharedData.overlayState == .tempoFieldEditing {
                             TempoField(sharedData: $sharedData)
+                                .fixedSize()
                         } else {
                             TempoText(sharedData: $sharedData, isPressed: isTempoFieldPressed)
+                                .fixedSize()
+                                .contentShape(.interaction, Circle(), eoFill: true)
                                 .accessibilitySortPriority(1)
                                 .gesture(isAnyPickerOpen ? nil : tempoFieldLongPress)
                         }
                     }
-                    .frame(height: 160, alignment: .center)
+                    .frame(width: 48, height: 48, alignment: .center)
                     
                     Hint(sharedData: $sharedData)
                         .accessibilityHidden(true)

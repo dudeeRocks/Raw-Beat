@@ -40,14 +40,17 @@ struct TempoText: View {
                     .blur(radius: 15)
                     .opacity(isPressed ? 0.0 : 1.0)
                     .animation(.easeInOut(duration: 0.15), value: isPressed)
+                    .allowsHitTesting(false)
                 Text(text)
                     .accessibilityLabel("Current tempo")
                     .accessibilityValue(text + " beats per minute")
                     .accessibilityHint("Triple tap to edit the value.")
                     .accessibilityHidden(isAnyPickerOpen)
                     .accessibilityIdentifier("tempoText")
+                    .allowsHitTesting(false)
                     .modifier(Modifiers.TempoText())
                     .getPosition(for: .tempoText, sharedData: $sharedData)
+                    .scaleEffect(isPressed ? 1.1 : 1.0)
                     .shadow(color: Color.gradientStartColor.opacity(isPressed ? 0.0 : 1.0),
                             radius: 1.0,
                             x: 0.0,

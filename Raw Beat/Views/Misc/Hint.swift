@@ -16,6 +16,7 @@ struct Hint: View {
                 HStack {
                     Image(systemName: sharedData.hint.symbol)
                         .accessibilityHidden(true)
+                        .symbolEffect(.bounce, options: .repeat(2))
                     Text(sharedData.hint.text)
                         .accessibilityIdentifier(ViewIdentifiers.hint.rawValue)
                 }
