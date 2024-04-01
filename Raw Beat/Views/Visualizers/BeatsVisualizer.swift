@@ -12,25 +12,27 @@ struct BeatsVisualizer: View {
     // MARK: - Body
     
     var body: some View {
-        TimelineView(.animation) { timeline in
-            Canvas { context, _ in
-                let currentTime: Double = CACurrentMediaTime()
-                
-                model.update(at: currentTime)
-                
-                if isPlaying {
+        if isPlaying {
+            TimelineView(.animation) { timeline in
+                Canvas { context, _ in
+                    let currentTime: Double = CACurrentMediaTime()
+                    
+                    model.update(at: currentTime)
                     resolveSymbols(for: model.beats, inContext: context)
-                }
-                
-            } symbols: {
-                let beatSize: CGFloat = getBeatSize()
-                
-                ForEach(model.beats, id: \.id) { beat in
-                    ParticleView(particle: beat, size: beatSize)
+                    
+                } symbols: {
+                    let beatSize: CGFloat = getBeatSize()
+                    
+                    ForEach(model.beats, id: \.id) { beat in
+                        ParticleView(particle: beat, size: beatSize)
+                    }
                 }
             }
+            .ignoresSafeArea()
+            .onDisappear {
+                model.beats = []
+            }
         }
-        .ignoresSafeArea()
     }
     
     // MARK: - Methods
