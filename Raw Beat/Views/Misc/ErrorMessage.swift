@@ -23,7 +23,7 @@ struct ErrorMessage: View {
     
     private var errorMessageTextView: some View {
         Text(sharedData.errorMessage.text)
-            .accessibilityLabel("Tempo input error: " + sharedData.errorMessage.text)
+            .accessibilityLabel(String(localized: "Tempo input error: \(sharedData.errorMessage.text)", comment: "Error message accessibility label."))
             .accessibilityFocused($isAccessibilityFocused)
             .accessibilityIdentifier(ViewIdentifiers.errorMessage.rawValue)
             .onAppear {

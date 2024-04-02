@@ -57,6 +57,7 @@
 		633B59DD2BB9899700065CD7 /* ViewIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59DC2BB9899700065CD7 /* ViewIdentifiers.swift */; };
 		633B59DF2BB989A100065CD7 /* ViewIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59DC2BB9899700065CD7 /* ViewIdentifiers.swift */; };
 		633B59E12BB989E100065CD7 /* CirclePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59E02BB989E100065CD7 /* CirclePicker.swift */; };
+		633B59E72BBAD9A100065CD7 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 633B59E62BBAD9A100065CD7 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		633B59D92BB9893900065CD7 /* TouchPaticleSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchPaticleSystem.swift; sourceTree = "<group>"; };
 		633B59DC2BB9899700065CD7 /* ViewIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIdentifiers.swift; sourceTree = "<group>"; };
 		633B59E02BB989E100065CD7 /* CirclePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclePicker.swift; sourceTree = "<group>"; };
+		633B59E62BBAD9A100065CD7 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				633B59812BB984EE00065CD7 /* Raw-Beat-Info.plist */,
+				633B59E62BBAD9A100065CD7 /* Localizable.xcstrings */,
 				633B59082BB980FD00065CD7 /* Raw_BeatApp.swift */,
 				633B590A2BB980FD00065CD7 /* ContentView.swift */,
 				633B599A2BB9876900065CD7 /* HapticsPlayer.swift */,
@@ -422,6 +425,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 633B58FC2BB980FD00065CD7;
 			productRefGroup = 633B59062BB980FD00065CD7 /* Products */;
@@ -448,6 +452,7 @@
 				633B590D2BB9810000065CD7 /* Assets.xcassets in Resources */,
 				633B59942BB9865900065CD7 /* kickDown.aif in Resources */,
 				633B59972BB9865900065CD7 /* kickUp.aif in Resources */,
+				633B59E72BBAD9A100065CD7 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

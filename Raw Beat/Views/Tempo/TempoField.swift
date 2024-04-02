@@ -35,7 +35,7 @@ struct TempoField: View {
                     enforceCharacterLimit(oldValue, newValue)
                     convertTextToTempo(text)
                 }
-                .accessibilityLabel("Tempo input field")
+                .accessibilityLabel(String(localized: "Tempo input field", comment: "Accessibility label for tempo field."))
                 .accessibilityIdentifier(ViewIdentifiers.tempoField.rawValue)
             ErrorMessage(sharedData: $sharedData)
         }

@@ -34,11 +34,11 @@ enum TimeSignature: CaseIterable, Identifiable, AnimatableSelection {
     var accessibilityLabel: String {
         switch self {
         case .threeFourth:
-            return "Three fourth"
+            return String(localized: "Three fourth", comment: "Accessibility label for time signature.")
         case .fourFourth:
-            return "Four fourth"
+            return String(localized: "Four fourth", comment: "Accessibility label for time signature.")
         case .sixEighths:
-            return "Six eighth"
+            return String(localized: "Six eighth", comment: "Accessibility label for time signature.")
         }
     }
 }

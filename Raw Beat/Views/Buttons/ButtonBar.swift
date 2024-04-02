@@ -38,11 +38,11 @@ struct ButtonBar: View {
                 // MARK: Submit buttons group
                 HStack {
                     CircleButton(action: dismiss, label: { Image(systemName: "xmark") })
-                        .accessibilityLabel("Cancel")
+                        .accessibilityLabel(String(localized: "Cancel", comment: "Accessibility label for button to cancel tempo input."))
                         .accessibilityIdentifier(ViewIdentifiers.dismissButton.rawValue)
                     Spacer()
                     CircleButton(action: submit, label: { Image(systemName: "checkmark").accessibilityHidden(true) })
-                        .accessibilityLabel("Set tempo")
+                        .accessibilityLabel(String(localized: "Set tempo", comment: "Accessibility label for button submit tempo input."))
                         .accessibilityIdentifier(ViewIdentifiers.submitButton.rawValue)
                 }
                 .padding(padding)

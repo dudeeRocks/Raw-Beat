@@ -51,11 +51,11 @@ enum Sound: CaseIterable, Identifiable, AnimatableSelection {
     var accessibilityLabel: String {
         switch self {
         case .tick:
-            return "Woodblock"
+            return String(localized: "Woodblock", comment: "Accessibility label for sound.")
         case .hihat:
-            return "Hi Hat"
+            return String(localized: "Hi Hat", comment: "Accessibility label for sound.")
         case .kick:
-            return "Sound effect"
+            return String(localized: "Sound effect", comment: "Accessibility label for sound.")
         }
     }
 }

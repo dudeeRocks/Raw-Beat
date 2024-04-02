@@ -1,0 +1,313 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@ beats per minute" : {
+      "comment" : "Tempo accessibility value.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ ударов в минуту"
+          }
+        }
+      }
+    },
+    "%@ is selected" : {
+      "comment" : "Part of accessibility label on picker buttons. Tells users what sound/time is selected.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ выбран"
+          }
+        }
+      }
+    },
+    "%lld" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        }
+      }
+    },
+    "%lld beats per minute" : {
+      "comment" : "Accessibility value for tempo scroll.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ударов в минуту"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "comment" : "Accessibility label for button to cancel tempo input.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отменить"
+          }
+        }
+      }
+    },
+    "Close picker" : {
+      "comment" : "Picker's close button accessibility label",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрыть меню"
+          }
+        }
+      }
+    },
+    "Current tempo" : {
+      "comment" : "Tempo accessibility label.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Текущий темп"
+          }
+        }
+      }
+    },
+    "Four fourth" : {
+      "comment" : "Accessibility label for time signature.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Четыре четвёртых"
+          }
+        }
+      }
+    },
+    "Hi Hat" : {
+      "comment" : "Accessibility label for sound.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "хай-хэт"
+          }
+        }
+      }
+    },
+    "Keep tapping..." : {
+      "comment" : "Tells users to keep tapping to set up tempo.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продолжай нажимать..."
+          }
+        }
+      }
+    },
+    "Long press tempo to edit" : {
+      "comment" : "Tells users to long press the tempo text to edit.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зажми темп для редактирования"
+          }
+        }
+      }
+    },
+    "Maximum tempo is %lld BPM." : {
+      "comment" : "Invalid input error.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Макс. темп – %lld ударов в минуту."
+          }
+        }
+      }
+    },
+    "Minimum tempo is %lld BPM." : {
+      "comment" : "Invalid input error.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мин. темп – %lld ударов в минуту."
+          }
+        }
+      }
+    },
+    "Set tempo" : {
+      "comment" : "Accessibility label for button submit tempo input.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Задать темп"
+          }
+        }
+      }
+    },
+    "Six eighth" : {
+      "comment" : "Accessibility label for time signature.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Шесть восьмых"
+          }
+        }
+      }
+    },
+    "Sound" : {
+      "comment" : "Picker's close button accessibility label",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Звук"
+          }
+        }
+      }
+    },
+    "Sound effect" : {
+      "comment" : "Accessibility label for sound.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Звуковой эффект"
+          }
+        }
+      }
+    },
+    "Sound Picker" : {
+      "comment" : "Accesibility label for sound picker.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбрать звук"
+          }
+        }
+      }
+    },
+    "Tap or swipe to set tempo" : {
+      "comment" : "Appears at the app launch to hint the controls.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настучи темп или прокрути вверх/вниз"
+          }
+        }
+      }
+    },
+    "Tempo input error: %@" : {
+      "comment" : "Error message accessibility label.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка ввода темпа: %@"
+          }
+        }
+      }
+    },
+    "Tempo input field" : {
+      "comment" : "Accessibility label for tempo field.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поле ввода темпа"
+          }
+        }
+      }
+    },
+    "Tempo slider" : {
+      "comment" : "Accessibility label for tempo scroll, which is represented as a slider for VoiceOver.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Слайдер темпа"
+          }
+        }
+      }
+    },
+    "Three fourth" : {
+      "comment" : "Accessibility label for time signature.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Три четвёртых"
+          }
+        }
+      }
+    },
+    "Time signature" : {
+      "comment" : "Picker's close button accessibility label",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тактовый размер"
+          }
+        }
+      }
+    },
+    "Time Signature Picker" : {
+      "comment" : "Accesibility label for time signature picker.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбрать тактовый размер"
+          }
+        }
+      }
+    },
+    "Triple tap to edit the value." : {
+      "comment" : "Tempo accessibility hint.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажми трижды чтобы редактировать темп."
+          }
+        }
+      }
+    },
+    "Turn up the volume" : {
+      "comment" : "Tells users that their device volume is off and sounds cannot be heard.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прибавь громкости"
+          }
+        }
+      }
+    },
+    "Woodblock" : {
+      "comment" : "Accessibility label for sound.",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Блок дерева"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

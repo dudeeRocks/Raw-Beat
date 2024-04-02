@@ -83,8 +83,8 @@ struct TempoScroll: View {
                         }, set: { newValue in
                             accessibilityUpdateScroll(with: newValue)
                         }), in: sliderRange)
-                        .accessibilityLabel("Tempo slider")
-                        .accessibilityValue("\(metronome.tempo) beats per minute")
+                        .accessibilityLabel(String(localized: "Tempo slider", comment: "Accessibility label for tempo scroll, which is represented as a slider for VoiceOver."))
+                        .accessibilityValue(String(localized:"\(metronome.tempo) beats per minute", comment: "Accessibility value for tempo scroll."))
                     }
                 }
             }

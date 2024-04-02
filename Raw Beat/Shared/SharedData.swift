@@ -208,13 +208,13 @@ struct SharedData {
             case .none:
                 return " "
             case .firstTimeExperience:
-                return "Tap or swipe to set tempo"
+                return String(localized: "Tap or swipe to set tempo", comment: "Appears at the app launch to hint the controls.")
             case .keepTapping:
-                return "Keep tapping..."
+                return String(localized: "Keep tapping...", comment: "Tells users to keep tapping to set up tempo.")
             case .longPress:
-                return "Long press to edit"
+                return String(localized: "Long press tempo to edit", comment: "Tells users to long press the tempo text to edit.")
             case .volumeOff:
-                return "Turn up the volume"
+                return String(localized: "Turn up the volume", comment: "Tells users that their device volume is off and sounds cannot be heard.")
             }
         }
         

@@ -9,9 +9,9 @@ enum MetronomeError: Error {
     var description: String {
         switch self {
         case .newTempoLessThanMinTempo:
-            return "Minimum tempo is \(Metronome.minTempo) BPM."
+            return String(localized: "Minimum tempo is \(Metronome.minTempo) BPM.", comment: "Invalid input error.")
         case .newTempoMoreThanMaxTempo:
-            return "Maximum tempo is \(Metronome.maxTempo) BPM."
+            return String(localized: "Maximum tempo is \(Metronome.maxTempo) BPM.", comment: "Invalid input error.")
         }
     }
 }

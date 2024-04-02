@@ -50,12 +50,12 @@ struct CirclePicker: View {
     
     private var closeButtonAccessibilityLabel: String {
         if isOpen {
-            return "Close picker"
+            return String(localized: "Close picker", comment: "Picker's close button accessibility label")
         } else {
             if pickerRole == .sound {
-                return "Sound"
+                return String(localized: "Sound", comment: "Picker's close button accessibility label")
             } else {
-                return "Time signature"
+                return String(localized: "Time signature", comment: "Picker's close button accessibility label")
             }
         }
     }
@@ -64,11 +64,9 @@ struct CirclePicker: View {
         if isOpen {
             return ""
         } else {
-            if pickerRole == .sound {
-                return metronome.sound.accessibilityLabel + " is selected"
-            } else {
-                return metronome.timeSignature.accessibilityLabel + " is selected"
-            }
+            let relevantLabel: String = pickerRole == .sound ? metronome.sound.accessibilityLabel : metronome.timeSignature.accessibilityLabel
+            
+            return String(localized: "\(relevantLabel) is selected", comment: "Part of accessibility label on picker buttons. Tells users what sound/time is selected.")
         }
     }
     
@@ -110,7 +108,7 @@ struct CirclePicker: View {
                                 Text(sound.accessibilityLabel).tag(sound)
                             }
                         } label: {
-                            Text("Sound Picker")
+                            Text("Sound Picker", comment: "Accesibility label for sound picker.")
                         }
                         .accessibilityFocused($isAccessibilityFocusOn)
                     }
@@ -143,7 +141,7 @@ struct CirclePicker: View {
                                 Text(timeSignature.accessibilityLabel).tag(timeSignature)
                             }
                         } label: {
-                            Text("Time Signature Picker")
+                            Text("Time Signature Picker", comment: "Accesibility label for time signature picker.")
                         }
                         .accessibilityFocused($isAccessibilityFocusOn)
                     }
