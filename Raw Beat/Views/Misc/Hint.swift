@@ -13,14 +13,16 @@ struct Hint: View {
     var body: some View {
         if sharedData.didMeasureScrollItem {
             if isHintShown {
-                HStack {
+                VStack(spacing: 16) {
                     Image(systemName: sharedData.hint.symbol)
                         .accessibilityHidden(true)
                         .symbolEffect(.bounce, options: .repeat(2))
+                        .font(.system(size: 28, weight: .medium, design: .default))
                     Text(sharedData.hint.text)
                         .accessibilityIdentifier(ViewIdentifiers.hint.rawValue)
+                        .font(.system(size: 18, weight: .medium, design: .default))
                 }
-                .font(.system(size: 20, weight: .medium, design: .default))
+                .frame(width: 300)
                 .multilineTextAlignment(.center)
                 .opacity(isHintShown ? 1.0 : 0.0)
                 .offset(x: 0, y: -sharedData.getHintOffset())
