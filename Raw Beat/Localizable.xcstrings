@@ -326,6 +326,12 @@
     "Tempo input error: %@" : {
       "comment" : "Error message accessibility label.",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error: %@"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -335,7 +341,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ошибка ввода темпа: %@"
+            "value" : "Ошибка: %@"
           }
         }
       }
