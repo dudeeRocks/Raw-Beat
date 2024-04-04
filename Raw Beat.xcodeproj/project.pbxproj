@@ -278,8 +278,8 @@
 			isa = PBXGroup;
 			children = (
 				633B59B72BB9887A00065CD7 /* BeatsVisualizer.swift */,
-				633B59B52BB9887900065CD7 /* ParticleView.swift */,
 				633B59B62BB9887A00065CD7 /* TouchVisualizer.swift */,
+				633B59B52BB9887900065CD7 /* ParticleView.swift */,
 			);
 			path = Visualizers;
 			sourceTree = "<group>";

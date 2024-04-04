@@ -103,6 +103,31 @@ class Metronome: MetronomeDelegate, ObservableObject {
         }
     }
     
+    private func setUpNotifications() {
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self,
+                                       selector: #selector(handleNotiication),
+                                       name: AVAudioSession.interruptionNotification,
+                                       object: AVAudioSession.sharedInstance())
+    }
+    
+    @objc private func handleNotiication(_ notification: NSNotification) {
+        guard let userInfo = notification.userInfo,
+              let typeValue = userInfo[AVAudioSessionInterruptionTypeKey] as? UInt,
+              let type = AVAudioSession.InterruptionType(rawValue: typeValue) else {
+            return
+        }
+        
+        switch type {
+        case .began:
+            stop()
+        case .ended:
+            play()
+        default:
+            return
+        }
+    }
+    
     // MARK: - AVFoundation Methods
     
     private func activateAudioSession() {
@@ -185,6 +210,7 @@ class Metronome: MetronomeDelegate, ObservableObject {
             print("Couldn't set the audio session to playback category. Error: \(error.localizedDescription)")
         }
         self.prepareSoundsToPlay()
+        self.setUpNotifications()
         
         audioEngine.attach(playerNode)
         audioEngine.connect(playerNode, to: audioEngine.outputNode, format: upBeat.processingFormat)
