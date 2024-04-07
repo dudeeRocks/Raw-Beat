@@ -24,8 +24,6 @@ struct PlayButton: View {
         } label: {
             SymbolContainer(frame: 36.0) {
                 Image(systemName: symbol)
-                    .font(.system(size: 36))
-                    .bold()
                     .contentTransition(.symbolEffect(.replace.downUp))
             }
         }

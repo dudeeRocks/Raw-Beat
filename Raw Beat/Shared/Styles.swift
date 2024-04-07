@@ -9,7 +9,7 @@ struct CircleButtonStyle: ButtonStyle {
     
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .modifier(Modifiers.SymbolStyle())
+            .modifier(Modifiers.SymbolStyle(buttonSize: size))
             .foregroundStyle(Color.label)
             .padding(.all, size.padding)
             .clipShape(Circle())
@@ -41,7 +41,7 @@ struct CircleButtonStyleForToggle: ButtonStyle {
     
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .modifier(Modifiers.SymbolStyle())
+            .modifier(Modifiers.SymbolStyle(buttonSize: size))
             .foregroundStyle(labelStyle)
             .padding(.all, size.padding)
             .clipShape(Circle())
@@ -61,7 +61,7 @@ struct CircleToggleStyle: ToggleStyle {
             configuration.isOn.toggle()
         } label: {
             configuration.label
-                .modifier(Modifiers.SymbolStyle())
+                .modifier(Modifiers.SymbolStyle(buttonSize: size))
         }
         .buttonStyle(CircleButtonStyleForToggle(isPressed: configuration.isOn, isOutlined: isOutlined, size: size))
     }
@@ -76,6 +76,17 @@ enum ButtonSize {
             return 16
         case .medium:
             return 22
+        case .large:
+            return 36
+        }
+    }
+    
+    var symbolSize: CGFloat {
+        switch self {
+        case .small:
+            return 20
+        case .medium:
+            return 24
         case .large:
             return 36
         }

@@ -98,7 +98,7 @@ struct SharedData {
         }
     }
     
-    mutating func prepareAnimationProperties(for element: AnimationElement, inRect rect: CGRect) {
+    mutating func prepareAnimationProperties(for element: AnimationElement, inRect rect: CGRect, deviceSize: UserInterfaceSizeClass?) {
         
         let origin: CGPoint = .init(
             x: rect.midX,
@@ -122,8 +122,9 @@ struct SharedData {
         animationSizes[element] = rect.width
         
         func calculatePosition(for properties: AnimationProperties) -> CGPoint {
-            let x: CGFloat = properties.offset.width
-            let y: CGFloat = properties.offset.height
+            let screenSizeFactor: CGFloat = deviceSize == .compact ? 1.0 : 1.5
+            let x: CGFloat = properties.offset.width * screenSizeFactor
+            let y: CGFloat = properties.offset.height * screenSizeFactor
             
             let result: CGPoint = .init(
                 x: origin.x + x,

@@ -6,6 +6,16 @@ struct Hint: View {
     
     @Binding var sharedData: SharedData
     
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    
+    private var size: Double {
+        horizontalSizeClass == .compact ? 18.0 : 28.0
+    }
+    
+    private var contentWidth: Double {
+        horizontalSizeClass == .compact ? 300.0 : 500.0
+    }
+    
     private var isHintShown: Bool {
         sharedData.hint != .none
     }
@@ -17,12 +27,12 @@ struct Hint: View {
                     Image(systemName: sharedData.hint.symbol)
                         .accessibilityHidden(true)
                         .symbolEffect(.bounce, options: .repeat(2))
-                        .font(.system(size: 28, weight: .medium, design: .default))
+                        .font(.system(size: size * 1.5, weight: .medium, design: .default))
                     Text(sharedData.hint.text)
                         .accessibilityIdentifier(ViewIdentifiers.hint.rawValue)
-                        .font(.system(size: 18, weight: .medium, design: .default))
+                        .font(.system(size: size, weight: .medium, design: .default))
                 }
-                .frame(width: 300)
+                .frame(width: contentWidth)
                 .multilineTextAlignment(.center)
                 .opacity(isHintShown ? 1.0 : 0.0)
                 .offset(x: 0, y: -sharedData.getHintOffset())

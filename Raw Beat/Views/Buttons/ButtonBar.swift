@@ -8,8 +8,15 @@ struct ButtonBar: View {
     
     var submit: () -> Void
     var dismiss: () -> Void
-    
-    private let padding: EdgeInsets = .init(top: 20, leading: 32, bottom: 40, trailing: 32)
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+    private var padding: EdgeInsets {
+        let top: CGFloat = 20.0, sides = 32.0, bottom = 40.0
+        let factor: CGFloat = horizontalSizeClass == .compact ? 1.0 : 2.0
+        return EdgeInsets(top: top,
+                          leading: sides * factor,
+                          bottom: bottom * factor,
+                          trailing: sides * factor)
+    }
     
     private var isTempoFieldInFocus: Bool {
         return sharedData.overlayState == .tempoFieldEditing

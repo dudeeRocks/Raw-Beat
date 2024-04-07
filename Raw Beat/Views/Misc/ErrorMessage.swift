@@ -51,12 +51,19 @@ struct ErrorMessage: View {
     // MARK: Nested Types
     
     struct ErrorMessageStyle: ViewModifier {
+        
+        @Environment(\.horizontalSizeClass) var horizontalSizeClass
+        
+        private var size: Double {
+            horizontalSizeClass == .compact ? 16.0 : 24.0
+        }
+        
         func body(content: Content) -> some View {
             content
-                .font(.system(size: 16, weight: .medium, design: .default))
+                .font(.system(size: size, weight: .medium, design: .default))
                 .foregroundStyle(Color.label)
-                .padding(.vertical, 6.0)
-                .padding(.horizontal, 12.0)
+                .padding(.vertical, size * 0.5)
+                .padding(.horizontal, size * 0.75)
                 .background(Color.accentColor, in: Capsule())
         }
     }

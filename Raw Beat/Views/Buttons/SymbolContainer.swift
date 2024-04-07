@@ -4,13 +4,19 @@ import SwiftUI
 
 struct SymbolContainer<Label: View>: View {
     
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    
     var frame: CGFloat
     var label: () -> Label
+    
+    private var adaptiveSize: CGFloat {
+        horizontalSizeClass == .compact ? frame : frame * 2.0
+    }
     
     var body: some View {
         ZStack {
             label()
         }
-        .frame(width: frame, height: frame, alignment: .center)
+        .frame(width: adaptiveSize, height: adaptiveSize, alignment: .center)
     }
 }

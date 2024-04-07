@@ -11,6 +11,11 @@ struct TempoMarking: View {
     
     @EnvironmentObject var metronome: Metronome
     @Binding var sharedData: SharedData
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    
+    private var size: Double {
+        horizontalSizeClass == .compact ? 24.0 : 36.0
+    }
     
     private var opacity: Double {
         sharedData.overlayState == .none ? 1.0 : 0.0
@@ -20,7 +25,7 @@ struct TempoMarking: View {
     var body: some View {
         if sharedData.didMeasureScrollItem {
             Text(sharedData.tempoName)
-                .font(.system(size: 24, weight: .medium, design: .serif))
+                .font(.system(size: size, weight: .medium, design: .serif))
                 .italic()
                 .kerning(5.0)
                 .foregroundStyle(.secondary)

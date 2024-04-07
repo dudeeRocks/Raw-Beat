@@ -5,9 +5,15 @@ import SwiftUI
 struct Modifiers {
     
     struct TempoText: ViewModifier {
+        @Environment(\.horizontalSizeClass) var horizontalSizeClass
+        
+        private var size: Double {
+            horizontalSizeClass == .compact ? 150.0 : 250.0
+        }
+        
         func body(content: Content) -> some View {
             content
-                .font(.system(size: 150, weight: .black, design: .default))
+                .font(.system(size: size, weight: .black, design: .default))
                 .kerning(-5.0)
                 .multilineTextAlignment(.center)
                 .foregroundStyle(.primary)
@@ -15,14 +21,38 @@ struct Modifiers {
     }
     
     struct SymbolStyle: ViewModifier {
+        @Environment(\.horizontalSizeClass) var horizontalSizeClass
+        
+        var buttonSize: ButtonSize
+        
+        private var symbolSize: CGFloat {
+            switch buttonSize {
+            case .large:
+                return horizontalSizeClass == .compact ? buttonSize.symbolSize : buttonSize.symbolSize * 1.2
+            default:
+                return horizontalSizeClass == .compact ? buttonSize.symbolSize * 0.85 : buttonSize.symbolSize * 1.2
+            }
+        }
+        
         func body(content: Content) -> some View {
             content
-                .font(.system(size: 20))
+                .font(.system(size: symbolSize))
                 .bold()
         }
     }
     
     struct MenuTransition: ViewModifier {
+        
+        @Environment(\.horizontalSizeClass) var horizontalSizeClass
+        private var offset: CGSize {
+            if horizontalSizeClass == .compact {
+                return properties.offset
+            } else {
+                let width: CGFloat = properties.offset.width * 1.5
+                let height: CGFloat = properties.offset.height * 1.5
+                return CGSize(width: width, height: height)
+            }
+        }
         
         var state: Bool
         
@@ -32,7 +62,7 @@ struct Modifiers {
             content
                 .opacity(state ? 1.0 : 0.0)
                 .scaleEffect(state ? 1.0 : 0.0001)
-                .offset(state ? properties.offset : .zero)
+                .offset(state ? offset : .zero)
                 .animation(.easeIn(duration: 0.3).delay(properties.delay), value: state)
         }
         
@@ -45,6 +75,8 @@ struct Modifiers {
     struct PositionGetter: ViewModifier {
         let element: AnimationElement
         @Binding var sharedData: SharedData
+        
+        @Environment(\.horizontalSizeClass) private var horizontalSizeClass
         
         private var geometryProxy: GeometryProxy {
             return sharedData.mainGeometryProxy
@@ -60,7 +92,7 @@ struct Modifiers {
                         print("Couldn't find CGRect for \(element)")
                         return
                     }
-                    sharedData.prepareAnimationProperties(for: element, inRect: rect)
+                    sharedData.prepareAnimationProperties(for: element, inRect: rect, deviceSize: horizontalSizeClass)
                 }
         }
         
