@@ -1,9 +1,4 @@
-//
-//  TempoName.swift
-//  Metronome
-//
-//  Created by David Katsman on 20/02/2024.
-//
+// Abstract: text that displays the name of the tempo.
 
 import SwiftUI
 

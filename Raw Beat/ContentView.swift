@@ -1,9 +1,4 @@
-//
-//  ContentView.swift
-//  Raw Beat
-//
-//  Created by David Katsman on 31/03/2024.
-//
+// Abstract: Main view
 
 import SwiftUI
 

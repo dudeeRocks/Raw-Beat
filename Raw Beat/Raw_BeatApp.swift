@@ -2,6 +2,12 @@
 //  Raw_BeatApp.swift
 //  Raw Beat
 //
+//  This is my very first app. The idea here was to create a simple app that solves a problem I have.
+//  As amatuer guitar player I needed a simple metronome that's easy to set up and to modify as I play.
+//  I wanted neat UX with intuitive gestures and slick UI, no bells and whistles.
+//  Building this app was a blast and I truly enjoyed every step on my way to launching this baby.
+//  Now let's rock!
+//
 //  Created by David Katsman on 31/03/2024.
 //
 

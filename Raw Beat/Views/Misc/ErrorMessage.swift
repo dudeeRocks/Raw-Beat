@@ -1,9 +1,4 @@
-//
-//  ErrorMessage.swift
-//  Metronome
-//
-//  Created by David Katsman on 06/03/2024.
-//
+// Abstract: the view that displayes errors.
 
 import SwiftUI
 
