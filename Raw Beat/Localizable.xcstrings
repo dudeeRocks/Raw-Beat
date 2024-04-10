@@ -15,6 +15,12 @@
             "state" : "translated",
             "value" : "%@ ударов в минуту"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ ударів на хвилину"
+          }
         }
       }
     },
@@ -32,6 +38,12 @@
             "state" : "translated",
             "value" : "%@ выбран"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ вибрано"
+          }
         }
       }
     },
@@ -44,6 +56,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -65,6 +83,12 @@
             "state" : "translated",
             "value" : "%lld ударов в минуту"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ударів на хвилину"
+          }
         }
       }
     },
@@ -81,6 +105,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Отменить"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скасувати"
           }
         }
       }
@@ -99,6 +129,12 @@
             "state" : "translated",
             "value" : "Закрыть меню"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрити меню"
+          }
         }
       }
     },
@@ -115,6 +151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Текущий темп"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поточний темп"
           }
         }
       }
@@ -133,6 +175,12 @@
             "state" : "translated",
             "value" : "Четыре четвёртых"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чотири четвертих"
+          }
         }
       }
     },
@@ -149,6 +197,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "хай-хэт"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "хай хет"
           }
         }
       }
@@ -167,6 +221,12 @@
             "state" : "translated",
             "value" : "Продолжай нажимать..."
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продовжуйте натискати..."
+          }
         }
       }
     },
@@ -183,6 +243,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Зажми темп для редактирования"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Затисніть темп для редагування"
           }
         }
       }
@@ -201,6 +267,12 @@
             "state" : "translated",
             "value" : "Макс. темп – %lld ударов в минуту."
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Максимальний темп %lld ударів на хвилину."
+          }
         }
       }
     },
@@ -217,6 +289,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Мин. темп – %lld ударов в минуту."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мінімальний темп %lld ударів на хвилину."
           }
         }
       }
@@ -235,6 +313,12 @@
             "state" : "translated",
             "value" : "Задать темп"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Встановити темп"
+          }
         }
       }
     },
@@ -252,6 +336,12 @@
             "state" : "translated",
             "value" : "Шесть восьмых"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Шість восьмих"
+          }
         }
       }
     },
@@ -265,6 +355,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Звук"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Звук"
@@ -286,6 +382,12 @@
             "state" : "translated",
             "value" : "Звуковой эффект"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Звуковий ефект"
+          }
         }
       }
     },
@@ -303,6 +405,12 @@
             "state" : "translated",
             "value" : "Выбрать звук"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вибір звуку"
+          }
         }
       }
     },
@@ -319,6 +427,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Настучи темп или прокрути вверх/вниз"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настукайте темп або прокрутіть вгору/вниз"
           }
         }
       }
@@ -343,6 +457,12 @@
             "state" : "translated",
             "value" : "Ошибка: %@"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Помилка: %@"
+          }
         }
       }
     },
@@ -358,7 +478,13 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Поле ввода темпа"
+            "value" : "Поле для ввода темпа"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поле введення темпу"
           }
         }
       }
@@ -377,6 +503,12 @@
             "state" : "translated",
             "value" : "Слайдер темпа"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Повзунок темпу"
+          }
         }
       }
     },
@@ -393,6 +525,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Три четвёртых"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Три четвертих"
           }
         }
       }
@@ -411,6 +549,12 @@
             "state" : "translated",
             "value" : "Тактовый размер"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тактовий розмір"
+          }
         }
       }
     },
@@ -428,6 +572,12 @@
             "state" : "translated",
             "value" : "Выбрать тактовый размер"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вибір тактового розміру"
+          }
         }
       }
     },
@@ -443,7 +593,13 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Нажми трижды чтобы редактировать темп."
+            "value" : "Нажмите трижды чтобы редактировать темп."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тричі торкніться, щоб змінити значення."
           }
         }
       }
@@ -462,12 +618,24 @@
             "state" : "translated",
             "value" : "Прибавь громкости"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Збільште гучність"
+          }
         }
       }
     },
     "Woodblock" : {
       "comment" : "Accessibility label for sound.",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wood block"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -478,6 +646,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Блок дерева"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дерев'яний блок"
           }
         }
       }
