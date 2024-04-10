@@ -13,9 +13,9 @@ final class Raw_BeatUITests: XCTestCase {
     var tempoTextView: XCUIElement! = nil
     
     private let defaultTempo: Int = 120
-    private let expectedMinError: String = "Tempo input error: Minimum tempo is 40 BPM."
-    private let expectedMaxError: String = "Tempo input error: Maximum tempo is 240 BPM."
-    private let expectedLongPressHint: String = "Long press to edit"
+    private let expectedMinError: String = "Error: Minimum tempo is 40 BPM."
+    private let expectedMaxError: String = "Error: Maximum tempo is 240 BPM."
+    private let expectedLongPressHint: String = "Long press tempo to edit"
     private let expectedKeepTappingHint: String = "Keep tapping..."
     private let expectedSoundPickerValue: String = "Sound effect is selected"
     private let expectedTimePickerValue: String = "Six eighth is selected"

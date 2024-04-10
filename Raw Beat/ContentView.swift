@@ -12,6 +12,8 @@ struct ContentView: View {
     
     @GestureState var isLongPress: Bool = false
     
+    private let tapSoundPlayer = TapSoundPlayer()
+    
     private var isAnyPickerOpen: Bool {
         return sharedData.overlayState != .none
     }
@@ -214,6 +216,8 @@ struct ContentView: View {
         case .none:
             let now: Double = CACurrentMediaTime()
             let tap: Tap = Tap(creationTime: now, location: location)
+            
+            tapSoundPlayer.play()
             
             touchParticleSystem.handle(tap: tap) { result in
                 if let calculatedTempo = result {

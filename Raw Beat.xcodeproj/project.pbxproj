@@ -58,6 +58,8 @@
 		633B59DF2BB989A100065CD7 /* ViewIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59DC2BB9899700065CD7 /* ViewIdentifiers.swift */; };
 		633B59E12BB989E100065CD7 /* CirclePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B59E02BB989E100065CD7 /* CirclePicker.swift */; };
 		633B59E72BBAD9A100065CD7 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 633B59E62BBAD9A100065CD7 /* Localizable.xcstrings */; };
+		638A872F2BC67F8B00239CBB /* tapSound.aif in Resources */ = {isa = PBXBuildFile; fileRef = 638A872E2BC67F8B00239CBB /* tapSound.aif */; };
+		638A87312BC681F900239CBB /* TapSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A87302BC681F900239CBB /* TapSoundPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +134,8 @@
 		633B59DC2BB9899700065CD7 /* ViewIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIdentifiers.swift; sourceTree = "<group>"; };
 		633B59E02BB989E100065CD7 /* CirclePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclePicker.swift; sourceTree = "<group>"; };
 		633B59E62BBAD9A100065CD7 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		638A872E2BC67F8B00239CBB /* tapSound.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = tapSound.aif; sourceTree = "<group>"; };
+		638A87302BC681F900239CBB /* TapSoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapSoundPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,7 @@
 				633B59082BB980FD00065CD7 /* Raw_BeatApp.swift */,
 				633B590A2BB980FD00065CD7 /* ContentView.swift */,
 				633B599A2BB9876900065CD7 /* HapticsPlayer.swift */,
+				638A87302BC681F900239CBB /* TapSoundPlayer.swift */,
 				633B599C2BB9878300065CD7 /* Views */,
 				633B59BF2BB988A300065CD7 /* Shared */,
 				633B59822BB9855400065CD7 /* Metronome */,
@@ -239,6 +244,7 @@
 		633B598D2BB9863300065CD7 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				638A872E2BC67F8B00239CBB /* tapSound.aif */,
 				633B59902BB9865900065CD7 /* hihatDown.aif */,
 				633B598F2BB9865800065CD7 /* hihatUp.aif */,
 				633B598E2BB9865800065CD7 /* kickDown.aif */,
@@ -450,6 +456,7 @@
 				633B59982BB9865900065CD7 /* tickDown.aif in Resources */,
 				633B59952BB9865900065CD7 /* hihatUp.aif in Resources */,
 				633B59962BB9865900065CD7 /* hihatDown.aif in Resources */,
+				638A872F2BC67F8B00239CBB /* tapSound.aif in Resources */,
 				633B59102BB9810000065CD7 /* Preview Assets.xcassets in Resources */,
 				633B590D2BB9810000065CD7 /* Assets.xcassets in Resources */,
 				633B59942BB9865900065CD7 /* kickDown.aif in Resources */,
@@ -491,6 +498,7 @@
 				633B59D42BB9891500065CD7 /* Particle+Animations.swift in Sources */,
 				633B59CB2BB988C500065CD7 /* Modifiers.swift in Sources */,
 				633B59AB2BB9883800065CD7 /* ButtonBar.swift in Sources */,
+				638A87312BC681F900239CBB /* TapSoundPlayer.swift in Sources */,
 				633B59AC2BB9883800065CD7 /* ButtonBackground.swift in Sources */,
 				633B59DB2BB9893900065CD7 /* TouchPaticleSystem.swift in Sources */,
 				633B598A2BB985AA00065CD7 /* MetronomeError.swift in Sources */,
