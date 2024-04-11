@@ -164,7 +164,7 @@ class Metronome: MetronomeDelegate, ObservableObject {
             let framesPerInterval: AVAudioFramePosition = AVAudioFramePosition(intervalInSeconds * sampleRate)
             
             Task {
-                await playerNode.scheduleFile(file, at: time, completionCallbackType: .dataPlayedBack)
+                await playerNode.scheduleFile(file, at: time, completionCallbackType: .dataRendered)
                 
                 updateNextBeat()
                 scheduleBeat()
