@@ -4,6 +4,12 @@
     "%@ beats per minute" : {
       "comment" : "Tempo accessibility value.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Schläge pro Minute"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -27,6 +33,12 @@
     "%@ is selected" : {
       "comment" : "Part of accessibility label on picker buttons. Tells users what sound/time is selected.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ ist ausgewählt"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -49,6 +61,12 @@
     },
     "%lld" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -72,6 +90,12 @@
     "%lld beats per minute" : {
       "comment" : "Accessibility value for tempo scroll.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Schläge pro Minute"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -95,6 +119,12 @@
     "Cancel" : {
       "comment" : "Accessibility label for button to cancel tempo input.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stornieren"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -118,6 +148,12 @@
     "Close picker" : {
       "comment" : "Picker's close button accessibility label",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auswahl schließen"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -141,6 +177,12 @@
     "Current tempo" : {
       "comment" : "Tempo accessibility label.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktuelles Tempo"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -164,6 +206,12 @@
     "Four fourth" : {
       "comment" : "Accessibility label for time signature.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vier Viertel"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -187,6 +235,12 @@
     "Hi Hat" : {
       "comment" : "Accessibility label for sound.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hi Hat"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -210,6 +264,12 @@
     "Keep tapping..." : {
       "comment" : "Tells users to keep tapping to set up tempo.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tippen Sie weiter..."
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -233,6 +293,12 @@
     "Long press tempo to edit" : {
       "comment" : "Tells users to long press the tempo text to edit.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Drücken Sie zum Bearbeiten lange auf Tempo"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -256,6 +322,12 @@
     "Maximum tempo is %lld BPM." : {
       "comment" : "Invalid input error.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das maximale Tempo beträgt %lld BPM."
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -279,6 +351,12 @@
     "Minimum tempo is %lld BPM." : {
       "comment" : "Invalid input error.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Mindesttempo beträgt %lld BPM."
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -302,6 +380,12 @@
     "Set tempo" : {
       "comment" : "Accessibility label for button submit tempo input.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo einstellen"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -325,6 +409,12 @@
     "Six eighth" : {
       "comment" : "Accessibility label for time signature.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sechs Achtel"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -348,6 +438,12 @@
     "Sound" : {
       "comment" : "Picker's close button accessibility label",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klang"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -371,6 +467,12 @@
     "Sound effect" : {
       "comment" : "Accessibility label for sound.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sound-Effekt"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -394,6 +496,12 @@
     "Sound Picker" : {
       "comment" : "Accesibility label for sound picker.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tonauswahl"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -417,6 +525,12 @@
     "Tap or swipe to set tempo" : {
       "comment" : "Appears at the app launch to hint the controls.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tippen oder wischen Sie, um das Tempo festzulegen"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -440,6 +554,12 @@
     "Tempo input error: %@" : {
       "comment" : "Error message accessibility label.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fehler: %@"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -469,6 +589,12 @@
     "Tempo input field" : {
       "comment" : "Accessibility label for tempo field.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo-Eingabefeld"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -492,6 +618,12 @@
     "Tempo slider" : {
       "comment" : "Accessibility label for tempo scroll, which is represented as a slider for VoiceOver.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo-Schieberegler"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -515,6 +647,12 @@
     "Three fourth" : {
       "comment" : "Accessibility label for time signature.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Drei Viertel"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -538,6 +676,12 @@
     "Time signature" : {
       "comment" : "Picker's close button accessibility label",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeitstempel"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -561,6 +705,12 @@
     "Time Signature Picker" : {
       "comment" : "Accesibility label for time signature picker.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taktart-Auswahl"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -584,6 +734,12 @@
     "Triple tap to edit the value." : {
       "comment" : "Tempo accessibility hint.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tippen Sie dreimal, um den Wert zu bearbeiten."
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -607,6 +763,12 @@
     "Turn up the volume" : {
       "comment" : "Tells users that their device volume is off and sounds cannot be heard.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Drehe die Lautstärke hoch"
+          }
+        },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
@@ -630,6 +792,12 @@
     "Woodblock" : {
       "comment" : "Accessibility label for sound.",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Holzblock"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",

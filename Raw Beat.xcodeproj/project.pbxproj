@@ -434,6 +434,7 @@
 				ru,
 				he,
 				uk,
+				de,
 			);
 			mainGroup = 633B58FC2BB980FD00065CD7;
 			productRefGroup = 633B59062BB980FD00065CD7 /* Products */;
