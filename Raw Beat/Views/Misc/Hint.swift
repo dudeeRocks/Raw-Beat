@@ -56,7 +56,7 @@ struct Hint: View {
     
     private func resetHintAfter(seconds deadline: TimeInterval) {
         Task(priority: .userInitiated) {
-            try await Task.sleep(until: .now + .seconds(deadline))
+            try await Task.sleep(for: .seconds(deadline))
             withAnimation(Animations.hint) {
                 sharedData.setHint(to: .none)
             }

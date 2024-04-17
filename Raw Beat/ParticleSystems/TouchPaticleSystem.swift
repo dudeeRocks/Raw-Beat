@@ -41,14 +41,11 @@ class TouchPaticleSystem: ObservableObject {
         
         if intervalBetweenTaps > maxInterval {
             tapIntervals.removeAll()
-            tapIntervals.append(intervalBetweenTaps)
         } else {
-            // TODO: This logic needs slight adjsutment for smoother UX.
-            // We either remove intervals too early or too late, but it doesn't feel right.
-            // Also, let's get an average inteval value, so that we don't reset tempo unnecesseraly.
             switch tapIntervals.count {
-            case 1, 2:
-                tapIntervals.append(intervalBetweenTaps)
+            case 0:
+                let interpolatedInterval: Double = intervalBetweenTaps
+                tapIntervals.append(contentsOf: [interpolatedInterval, intervalBetweenTaps])
                 action(nil)
             case 6:
                 tapIntervals.append(intervalBetweenTaps)
