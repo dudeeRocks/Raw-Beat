@@ -62,6 +62,9 @@
 		638A87312BC681F900239CBB /* TapSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A87302BC681F900239CBB /* TapSoundPlayer.swift */; };
 		FAFE6BD72C4F9C92001D03FF /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BD62C4F9C92001D03FF /* Header.swift */; };
 		FAFE6BD92C4F9FA9001D03FF /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BD82C4F9FA9001D03FF /* InfoView.swift */; };
+		FAFE6BDC2C4FA513001D03FF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BDB2C4FA513001D03FF /* Store.swift */; };
+		FAFE6BDE2C4FA575001D03FF /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BDD2C4FA575001D03FF /* Log.swift */; };
+		FAFE6BE02C4FA6CC001D03FF /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BDF2C4FA6CC001D03FF /* Tip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +143,9 @@
 		638A87302BC681F900239CBB /* TapSoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapSoundPlayer.swift; sourceTree = "<group>"; };
 		FAFE6BD62C4F9C92001D03FF /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		FAFE6BD82C4F9FA9001D03FF /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		FAFE6BDB2C4FA513001D03FF /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		FAFE6BDD2C4FA575001D03FF /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		FAFE6BDF2C4FA6CC001D03FF /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +206,7 @@
 				633B599C2BB9878300065CD7 /* Views */,
 				633B59BF2BB988A300065CD7 /* Shared */,
 				633B59822BB9855400065CD7 /* Metronome */,
+				FAFE6BDA2C4FA4FC001D03FF /* Store */,
 				633B59CC2BB988D300065CD7 /* ParticleSystems */,
 				633B598D2BB9863300065CD7 /* Sounds */,
 				633B590C2BB9810000065CD7 /* Assets.xcassets */,
@@ -325,6 +332,7 @@
 				633B59C52BB988C500065CD7 /* Modifiers.swift */,
 				633B59C32BB988C500065CD7 /* SharedData.swift */,
 				633B59C42BB988C500065CD7 /* Styles.swift */,
+				FAFE6BDD2C4FA575001D03FF /* Log.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -349,6 +357,15 @@
 				633B59CE2BB9891400065CD7 /* Tap.swift */,
 			);
 			path = Particles;
+			sourceTree = "<group>";
+		};
+		FAFE6BDA2C4FA4FC001D03FF /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE6BDB2C4FA513001D03FF /* Store.swift */,
+				FAFE6BDF2C4FA6CC001D03FF /* Tip.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,6 +511,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFE6BD72C4F9C92001D03FF /* Header.swift in Sources */,
+				FAFE6BE02C4FA6CC001D03FF /* Tip.swift in Sources */,
+				FAFE6BDE2C4FA575001D03FF /* Log.swift in Sources */,
 				633B590B2BB980FD00065CD7 /* ContentView.swift in Sources */,
 				633B59A82BB9883800065CD7 /* PlayButton.swift in Sources */,
 				633B59882BB985AA00065CD7 /* Sound.swift in Sources */,
@@ -514,6 +533,7 @@
 				633B59BE2BB9889200065CD7 /* ErrorMessage.swift in Sources */,
 				633B598C2BB985AA00065CD7 /* Metronome.swift in Sources */,
 				633B59A92BB9883800065CD7 /* SymbolContainer.swift in Sources */,
+				FAFE6BDC2C4FA513001D03FF /* Store.swift in Sources */,
 				633B59A72BB9883800065CD7 /* CircleToggle.swift in Sources */,
 				633B59CA2BB988C500065CD7 /* Styles.swift in Sources */,
 				633B59C62BB988C500065CD7 /* Animations.swift in Sources */,
