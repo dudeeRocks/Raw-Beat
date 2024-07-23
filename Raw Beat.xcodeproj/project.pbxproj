@@ -61,6 +61,7 @@
 		638A872F2BC67F8B00239CBB /* tapSound.aif in Resources */ = {isa = PBXBuildFile; fileRef = 638A872E2BC67F8B00239CBB /* tapSound.aif */; };
 		638A87312BC681F900239CBB /* TapSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A87302BC681F900239CBB /* TapSoundPlayer.swift */; };
 		FAFE6BD72C4F9C92001D03FF /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BD62C4F9C92001D03FF /* Header.swift */; };
+		FAFE6BD92C4F9FA9001D03FF /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BD82C4F9FA9001D03FF /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +139,7 @@
 		638A872E2BC67F8B00239CBB /* tapSound.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = tapSound.aif; sourceTree = "<group>"; };
 		638A87302BC681F900239CBB /* TapSoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapSoundPlayer.swift; sourceTree = "<group>"; };
 		FAFE6BD62C4F9C92001D03FF /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		FAFE6BD82C4F9FA9001D03FF /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +311,7 @@
 				633B59BC2BB9889200065CD7 /* ErrorMessage.swift */,
 				633B59BB2BB9889200065CD7 /* Hint.swift */,
 				FAFE6BD62C4F9C92001D03FF /* Header.swift */,
+				FAFE6BD82C4F9FA9001D03FF /* InfoView.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				633B59B22BB9886200065CD7 /* TempoField.swift in Sources */,
 				633B59B92BB9887A00065CD7 /* TouchVisualizer.swift in Sources */,
 				633B59D62BB9891500065CD7 /* Pulse.swift in Sources */,
+				FAFE6BD92C4F9FA9001D03FF /* InfoView.swift in Sources */,
 				633B59C72BB988C500065CD7 /* Colors.swift in Sources */,
 				633B59B12BB9886200065CD7 /* TempoMarking.swift in Sources */,
 				633B59D42BB9891500065CD7 /* Particle+Animations.swift in Sources */,

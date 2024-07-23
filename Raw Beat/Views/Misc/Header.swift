@@ -1,9 +1,4 @@
-//
-//  Header.swift
-//  Raw Beat
-//
-//  Created by David Katsman on 23/07/2024.
-//
+// Abstract: View that appears at the top of main UI.
 
 import SwiftUI
 
@@ -33,7 +28,7 @@ struct Header: View {
                 Image(systemName: "info")
             }
             .sheet(isPresented: $isSheetPresented) {
-                Text("Hello!") // TODO: Replace with InfoView
+                InfoView()
                     // TODO: Add Store here: .environmentObject(store)
                     .overlay {
                         GeometryReader { geometry in
