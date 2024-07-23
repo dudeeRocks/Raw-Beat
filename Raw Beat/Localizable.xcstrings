@@ -116,6 +116,9 @@
         }
       }
     },
+    "Back to work!" : {
+
+    },
     "Caffeine Buddy!" : {
 
     },
@@ -149,6 +152,9 @@
       }
     },
     "Cheers to you!" : {
+
+    },
+    "Cheers!" : {
 
     },
     "Close picker" : {
@@ -333,6 +339,9 @@
           }
         }
       }
+    },
+    "M'kay" : {
+
     },
     "Maximum tempo is %lld BPM." : {
       "comment" : "Invalid input error.",

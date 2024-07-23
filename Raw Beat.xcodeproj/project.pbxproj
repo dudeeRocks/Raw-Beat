@@ -67,6 +67,7 @@
 		FAFE6BE02C4FA6CC001D03FF /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BDF2C4FA6CC001D03FF /* Tip.swift */; };
 		FAFE6BE22C4FA989001D03FF /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BE12C4FA989001D03FF /* ShopView.swift */; };
 		FAFE6BE52C4FAD39001D03FF /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = FAFE6BE42C4FAD39001D03FF /* StoreKitTestCertificate.cer */; };
+		FAFE6BE72C4FD6DE001D03FF /* ThankYouNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BE62C4FD6DE001D03FF /* ThankYouNote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,7 @@
 		FAFE6BE12C4FA989001D03FF /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		FAFE6BE32C4FAA5C001D03FF /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
 		FAFE6BE42C4FAD39001D03FF /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = "<group>"; };
+		FAFE6BE62C4FD6DE001D03FF /* ThankYouNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouNote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +327,7 @@
 				FAFE6BD62C4F9C92001D03FF /* Header.swift */,
 				FAFE6BD82C4F9FA9001D03FF /* InfoView.swift */,
 				FAFE6BE12C4FA989001D03FF /* ShopView.swift */,
+				FAFE6BE62C4FD6DE001D03FF /* ThankYouNote.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				633B59892BB985AA00065CD7 /* MetronomeDelegate.swift in Sources */,
 				633B59E12BB989E100065CD7 /* CirclePicker.swift in Sources */,
 				633B59B82BB9887A00065CD7 /* ParticleView.swift in Sources */,
+				FAFE6BE72C4FD6DE001D03FF /* ThankYouNote.swift in Sources */,
 				633B59D72BB9891500065CD7 /* Beat.swift in Sources */,
 				633B598B2BB985AA00065CD7 /* TimeSignature.swift in Sources */,
 				633B599B2BB9876900065CD7 /* HapticsPlayer.swift in Sources */,
