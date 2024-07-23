@@ -3,8 +3,8 @@
 import SwiftUI
 
 struct ThankYouNote: View {
+    @Binding var isPresented: Bool
     let tip: Tip
-    let onDismiss: () -> Void
     
     private let padding: EdgeInsets = .init(top: 30.0,
                                             leading: 30.0,
@@ -22,11 +22,11 @@ struct ThankYouNote: View {
         }
     }
     
-    @State private var isPresented: Bool = false
+    @State private var isSlideUp: Bool = false
     
     var body: some View {
         ZStack {
-            Color.primaryColor
+            Color.primaryColor // FIXME: Gotta change the color in dark mode
                 .opacity(0.75)
                 .ignoresSafeArea()
             ZStack {
@@ -55,10 +55,10 @@ struct ThankYouNote: View {
                     
                     // MARK: Close button
                     Button {
-                        withAnimation {
+                        isSlideUp = false
+                        withAnimation(.easeOut.delay(0.5)) {
                             isPresented = false
                         }
-                        onDismiss()
                     } label: {
                         Text(buttonText)
                             .padding(.horizontal, 20)
@@ -71,17 +71,12 @@ struct ThankYouNote: View {
                 .multilineTextAlignment(.center)
                 .offset(x: 0.0, y: isPresented ? 0.0 : 100.0)
                 .opacity(isPresented ? 1.0 : 0.0)
+                .animation(.easeInOut(duration: 0.3), value: isSlideUp)
             }
             .padding()
         }
         .onAppear {
-            withAnimation {
-                isPresented = true
-            }
+            isSlideUp = true
         }
     }
-}
-
-#Preview {
-    ThankYouNote(tip: .water, onDismiss: {})
 }
