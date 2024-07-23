@@ -4,7 +4,7 @@ import SwiftUI
 
 struct Header: View {
     
-    // TODO: Add store here: @StateObject private var store = Store()
+    @StateObject private var store = Store()
     
     @State private var isSheetPresented: Bool = false
     @State private var sheetHeight: CGFloat = .zero
@@ -29,7 +29,7 @@ struct Header: View {
             }
             .sheet(isPresented: $isSheetPresented) {
                 InfoView()
-                    // TODO: Add Store here: .environmentObject(store)
+                    .environmentObject(store)
                     .overlay {
                         GeometryReader { geometry in
                             Color.clear.preference(key: InfoViewHeight.self, value: geometry.size.height)

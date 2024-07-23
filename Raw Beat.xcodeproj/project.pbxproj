@@ -65,6 +65,8 @@
 		FAFE6BDC2C4FA513001D03FF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BDB2C4FA513001D03FF /* Store.swift */; };
 		FAFE6BDE2C4FA575001D03FF /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BDD2C4FA575001D03FF /* Log.swift */; };
 		FAFE6BE02C4FA6CC001D03FF /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BDF2C4FA6CC001D03FF /* Tip.swift */; };
+		FAFE6BE22C4FA989001D03FF /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BE12C4FA989001D03FF /* ShopView.swift */; };
+		FAFE6BE52C4FAD39001D03FF /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = FAFE6BE42C4FAD39001D03FF /* StoreKitTestCertificate.cer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +148,9 @@
 		FAFE6BDB2C4FA513001D03FF /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		FAFE6BDD2C4FA575001D03FF /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		FAFE6BDF2C4FA6CC001D03FF /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		FAFE6BE12C4FA989001D03FF /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		FAFE6BE32C4FAA5C001D03FF /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
+		FAFE6BE42C4FAD39001D03FF /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +324,7 @@
 				633B59BB2BB9889200065CD7 /* Hint.swift */,
 				FAFE6BD62C4F9C92001D03FF /* Header.swift */,
 				FAFE6BD82C4F9FA9001D03FF /* InfoView.swift */,
+				FAFE6BE12C4FA989001D03FF /* ShopView.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -363,6 +369,8 @@
 			isa = PBXGroup;
 			children = (
 				FAFE6BDB2C4FA513001D03FF /* Store.swift */,
+				FAFE6BE32C4FAA5C001D03FF /* Products.storekit */,
+				FAFE6BE42C4FAD39001D03FF /* StoreKitTestCertificate.cer */,
 				FAFE6BDF2C4FA6CC001D03FF /* Tip.swift */,
 			);
 			path = Store;
@@ -478,6 +486,7 @@
 			files = (
 				633B59992BB9865900065CD7 /* tickUp.aif in Resources */,
 				633B59982BB9865900065CD7 /* tickDown.aif in Resources */,
+				FAFE6BE52C4FAD39001D03FF /* StoreKitTestCertificate.cer in Resources */,
 				633B59952BB9865900065CD7 /* hihatUp.aif in Resources */,
 				633B59962BB9865900065CD7 /* hihatDown.aif in Resources */,
 				638A872F2BC67F8B00239CBB /* tapSound.aif in Resources */,
@@ -513,6 +522,7 @@
 				FAFE6BD72C4F9C92001D03FF /* Header.swift in Sources */,
 				FAFE6BE02C4FA6CC001D03FF /* Tip.swift in Sources */,
 				FAFE6BDE2C4FA575001D03FF /* Log.swift in Sources */,
+				FAFE6BE22C4FA989001D03FF /* ShopView.swift in Sources */,
 				633B590B2BB980FD00065CD7 /* ContentView.swift in Sources */,
 				633B59A82BB9883800065CD7 /* PlayButton.swift in Sources */,
 				633B59882BB985AA00065CD7 /* Sound.swift in Sources */,

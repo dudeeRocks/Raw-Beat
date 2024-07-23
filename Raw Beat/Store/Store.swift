@@ -41,7 +41,7 @@ class Store: ObservableObject {
         switch purchaseResult {
         case .success(let verificationResult):
             let transaction = try verify(transaction: verificationResult)
-            process(transaction)
+            await process(transaction)
             await transaction.finish()
             Log.sharedInstance.log(message: "Purchase success. Product: \(product.id)")
         case .pending:
@@ -66,6 +66,7 @@ class Store: ObservableObject {
         }
     }
     
+    @MainActor
     private func process(_ transaction: Transaction) {
         if let purchasedProduct = products.first(where: { $0.id == transaction.productID} ) {
             Log.sharedInstance.log(message: "Adding \(purchasedProduct.id) to 'purchasedProducts'.")
@@ -105,7 +106,7 @@ class Store: ObservableObject {
                 do {
                     let transaction = try self.verify(transaction: update)
                     
-                    self.process(transaction)
+                    await self.process(transaction)
                     
                     await transaction.finish()
                 } catch {

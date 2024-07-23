@@ -3,7 +3,7 @@
 import SwiftUI
 
 struct InfoView: View {
-    // TODO: Add Store here: @EnvironmentObject var store: Store
+    @EnvironmentObject var store: Store
     
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Environment(\.colorScheme) private var colorScheme: ColorScheme
@@ -71,7 +71,7 @@ struct InfoView: View {
                     .frame(maxWidth: .infinity)
                     .multilineTextAlignment(.leading)
                     
-                    // TODO: Add shop view here: ShopView() 
+                    ShopView() 
                     
                     Text("Note: These purchases won't unlock any features, but they'll help support the app's development.")
                         .font(.caption)
