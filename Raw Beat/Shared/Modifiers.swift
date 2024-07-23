@@ -89,7 +89,7 @@ struct Modifiers {
                 }
                 .onPreferenceChange(ViewBounds.self) { value in
                     guard let rect = value[element] else {
-                        print("Couldn't find CGRect for \(element)")
+                        Log.sharedInstance.log(message: "Couldn't find CGRect for \(element)")
                         return
                     }
                     sharedData.prepareAnimationProperties(for: element, inRect: rect, deviceSize: horizontalSizeClass)

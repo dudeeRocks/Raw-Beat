@@ -14,7 +14,7 @@ struct InfoView: View {
         if let versionNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String {
             result = versionNumber
         } else {
-            print("Failed to get the version number")
+            Log.sharedInstance.log(error: "Failed to get the version number")
         }
         
         return result

@@ -10,7 +10,7 @@ class Log {
     private let signposter: OSSignposter
     
     init() {
-        logger = Logger(subsystem: "rocks.dudee.GoogleAdmobTestApp", category: "PointsOfInterest")
+        logger = Logger(subsystem: "rocks.dudee.RawBeat", category: "PointsOfInterest")
         signposter = OSSignposter(logger: logger)
     }
     

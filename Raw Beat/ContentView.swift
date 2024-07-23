@@ -184,7 +184,7 @@ struct ContentView: View {
                 sharedData.shakeTempoField()
                 hapticsPlayer.defaultFeedbackGenerator?.notificationOccurred(.error)
             } catch {
-                print(error.localizedDescription)
+                Log.sharedInstance.log(error: error.localizedDescription)
             }
         } else {
             do {
@@ -194,7 +194,7 @@ struct ContentView: View {
             } catch MetronomeError.newTempoMoreThanMaxTempo {
                 metronome.tempo = Metronome.maxTempo
             } catch {
-                print(error.localizedDescription)
+                Log.sharedInstance.log(error: error.localizedDescription)
                 return
             }
             sharedData.newTempo = metronome.tempo

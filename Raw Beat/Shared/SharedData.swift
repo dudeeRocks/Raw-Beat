@@ -154,7 +154,7 @@ struct SharedData {
         }
         
         guard let scrollProxy = scrollViewProxy else {
-            print("No scroll proxy found.")
+            Log.sharedInstance.log(message: "No scroll proxy found.")
             return
         }
         
@@ -168,7 +168,7 @@ struct SharedData {
     
     func safelyUnwrap(position: AnimationProperties) -> CGPoint {
         guard let point = animationPositions[position] else {
-            print("Couldn't find play position for \(position).")
+            Log.sharedInstance.log(message: "Couldn't find play position for \(position).")
             return .zero
         }
         return point
@@ -176,7 +176,7 @@ struct SharedData {
     
     func safelyUnwrap(size element: AnimationElement) -> CGFloat {
         guard let size = animationSizes[element] else {
-            print("Couldn't find size for \(element).")
+            Log.sharedInstance.log(message: "Couldn't find size for \(element).")
             return .zero
         }
         return size

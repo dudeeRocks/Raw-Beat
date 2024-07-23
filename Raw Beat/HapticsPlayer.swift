@@ -58,35 +58,35 @@ class HapticsPlayer: ObservableObject {
         do {
             hapticEngine = try CHHapticEngine()
         } catch {
-            print("Couldn't create hapticEngine. Error: \(error.localizedDescription)")
+            Log.sharedInstance.log(error: "Couldn't create hapticEngine. Error: \(error.localizedDescription)")
         }
         
         hapticEngine.stoppedHandler = { reason in
-            print("Stop Handler: The engine stopped for reason: \(reason.rawValue)")
+            Log.sharedInstance.log(message: "Stop Handler: The engine stopped for reason: \(reason.rawValue)")
             switch reason {
-            case .audioSessionInterrupt: print("Audio session interrupt")
-            case .applicationSuspended: print("Application suspended")
-            case .idleTimeout: print("Idle timeout")
-            case .systemError: print("System error")
+            case .audioSessionInterrupt: Log.sharedInstance.log(message: "Audio session interrupt")
+            case .applicationSuspended: Log.sharedInstance.log(message: "Application suspended")
+            case .idleTimeout: Log.sharedInstance.log(message: "Idle timeout")
+            case .systemError: Log.sharedInstance.log(error: "System error")
             @unknown default:
-                print("Unknown error")
+                Log.sharedInstance.log(error: "Unknown error")
             }
         }
         
         hapticEngine.resetHandler = {
-            print("Restarting haptics engine.")
+            Log.sharedInstance.log(message: "Restarting haptics engine.")
             do {
                 try self.hapticEngine.start()
                 self.createPlayers()
             } catch {
-                print("Failed to restart haptics engine. Error: \(error.localizedDescription)")
+                Log.sharedInstance.log(error: "Failed to restart haptics engine. Error: \(error.localizedDescription)")
             }
         }
         
         do {
             try hapticEngine.start()
         } catch {
-            print("Failed to start the haptic engine. Error: \(error.localizedDescription)")
+            Log.sharedInstance.log(error: "Failed to start the haptic engine. Error: \(error.localizedDescription)")
         }
     }
     
@@ -122,7 +122,7 @@ class HapticsPlayer: ObservableObject {
                 longPressUpdatingPattern = try CHHapticPattern(events: [event],
                                                                parameterCurves: [intensityCurve, sharpnessCurve])
             } catch {
-                print("Failed to create 'longPressUpdatingPattern'. Error: \(error.localizedDescription)")
+                Log.sharedInstance.log(error: "Failed to create 'longPressUpdatingPattern'. Error: \(error.localizedDescription)")
             }
         }
         
@@ -143,7 +143,7 @@ class HapticsPlayer: ObservableObject {
             do {
                 longPressEndedPattern = try CHHapticPattern(events: [firstTap, secondTap], parameters: [])
             } catch {
-                print("Failed to create 'longPressEndedPattern'. Error: \(error.localizedDescription)")
+                Log.sharedInstance.log(error: "Failed to create 'longPressEndedPattern'. Error: \(error.localizedDescription)")
             }
         }
         
@@ -156,7 +156,7 @@ class HapticsPlayer: ObservableObject {
             do {
                 scrollPattern = try CHHapticPattern(events: [event], parameters: [])
             } catch {
-                print("Failed to create 'scrollPattern'. Error: \(error.localizedDescription)")
+                Log.sharedInstance.log(error: "Failed to create 'scrollPattern'. Error: \(error.localizedDescription)")
             }
         }
     }
@@ -165,19 +165,19 @@ class HapticsPlayer: ObservableObject {
         do {
             longPressUpdatingPlayer = try hapticEngine.makePlayer(with: longPressUpdatingPattern)
         } catch {
-            print("Failed to create 'longPressUpdatingPlayer'. Error: \(error.localizedDescription)")
+            Log.sharedInstance.log(error: "Failed to create 'longPressUpdatingPlayer'. Error: \(error.localizedDescription)")
         }
         
         do {
             longPressEndedPlayer = try hapticEngine.makePlayer(with: longPressEndedPattern)
         } catch {
-            print("Failed to create 'longPressEndedPlayer'. Error: \(error.localizedDescription)")
+            Log.sharedInstance.log(error: "Failed to create 'longPressEndedPlayer'. Error: \(error.localizedDescription)")
         }
         
         do {
             scrollPlayer = try hapticEngine.makePlayer(with: scrollPattern)
         } catch {
-            print("Failed to create 'scrollPlayer'. Error \(error.localizedDescription)")
+            Log.sharedInstance.log(error: "Failed to create 'scrollPlayer'. Error \(error.localizedDescription)")
         }
     }
     
@@ -191,20 +191,20 @@ class HapticsPlayer: ObservableObject {
                     do {
                         try longPressUpdatingPlayer.start(atTime: CHHapticTimeImmediate)
                     } catch {
-                        print("Failed to start 'longPressUpdatingPlayer'. Error: \(error.localizedDescription)")
+                        Log.sharedInstance.log(error: "Failed to start 'longPressUpdatingPlayer'. Error: \(error.localizedDescription)")
 
                     }
         case .longPressEnded:
             do {
                 try longPressEndedPlayer.start(atTime: CHHapticTimeImmediate)
             } catch {
-                print("Failed to start 'longPressEndedPlayer'. Error: \(error.localizedDescription)")
+                Log.sharedInstance.log(error: "Failed to start 'longPressEndedPlayer'. Error: \(error.localizedDescription)")
             }
         case .scroll:
             do {
                 try scrollPlayer.start(atTime: CHHapticTimeImmediate)
             } catch {
-                print("Failed to start 'scrollPlayer'. Error: \(error.localizedDescription)")
+                Log.sharedInstance.log(error: "Failed to start 'scrollPlayer'. Error: \(error.localizedDescription)")
             }
         }
     }
@@ -220,7 +220,7 @@ class HapticsPlayer: ObservableObject {
         do {
             try hapticEngine.start()
         } catch {
-            print("Failed to restart the engine. Error: \(error.localizedDescription)")
+            Log.sharedInstance.log(error: "Failed to restart the engine. Error: \(error.localizedDescription)")
         }
     }
     

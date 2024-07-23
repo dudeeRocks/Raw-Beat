@@ -134,7 +134,7 @@ class Metronome: MetronomeDelegate, ObservableObject {
         do {
             try audioSession.setActive(true)
         } catch {
-            print("Couldn't set the audio session to active. Error: \(error.localizedDescription)")
+            Log.sharedInstance.log(error: "Couldn't set the audio session to active. Error: \(error.localizedDescription)")
         }
     }
     
@@ -142,7 +142,7 @@ class Metronome: MetronomeDelegate, ObservableObject {
         do {
             try audioSession.setActive(false)
         } catch {
-            print("Couldn't deactivate the audio session. Error: \(error.localizedDescription)")
+            Log.sharedInstance.log(error: "Couldn't deactivate the audio session. Error: \(error.localizedDescription)")
         }
     }
     
@@ -151,7 +151,7 @@ class Metronome: MetronomeDelegate, ObservableObject {
             do {
                 try audioEngine.start()
             } catch {
-                print("Couldn't start audio engine. Error: \(error.localizedDescription)")
+                Log.sharedInstance.log(error: "Couldn't start audio engine. Error: \(error.localizedDescription)")
             }
         }
     }
@@ -197,7 +197,7 @@ class Metronome: MetronomeDelegate, ObservableObject {
             downBeat = try AVAudioFile(forReading: url.downBeat)
             
         } catch let error {
-            print("Couldn't prepare sounds to play. Error: \(error.localizedDescription)")
+            Log.sharedInstance.log(error: "Couldn't prepare sounds to play. Error: \(error.localizedDescription)")
         }
     }
     
@@ -207,7 +207,7 @@ class Metronome: MetronomeDelegate, ObservableObject {
         do {
             try audioSession.setCategory(.playback, mode: .default, options: [.mixWithOthers])
         } catch let error {
-            print("Couldn't set the audio session to playback category. Error: \(error.localizedDescription)")
+            Log.sharedInstance.log(error: "Couldn't set the audio session to playback category. Error: \(error.localizedDescription)")
         }
         self.prepareSoundsToPlay()
         self.setUpNotifications()

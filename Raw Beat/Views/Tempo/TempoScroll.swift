@@ -156,7 +156,7 @@ struct TempoScroll: View {
         } catch MetronomeError.newTempoMoreThanMaxTempo {
             metronome.tempo = Metronome.maxTempo
         } catch {
-            print(error.localizedDescription)
+            Log.sharedInstance.log(error: error.localizedDescription)
         }
     }
     
