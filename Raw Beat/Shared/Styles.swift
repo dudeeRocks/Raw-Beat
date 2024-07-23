@@ -2,19 +2,28 @@
 
 import SwiftUI
 
-struct CircleButtonStyle: ButtonStyle {
+struct CustomButton<S: Shape>: ButtonStyle {
     
     let isOutlined: Bool
     var size: ButtonSize = .medium
+    var shape: S
     
     func makeBody(configuration: Configuration) -> some View {
-        configuration.label
+        var labelColor: Color {
+            if isOutlined {
+                configuration.isPressed ? Color.label : Color.primaryColor
+            } else {
+                Color.label
+            }
+        }
+        
+        return configuration.label
             .modifier(Modifiers.SymbolStyle(buttonSize: size))
-            .foregroundStyle(Color.label)
+            .foregroundStyle(labelColor)
             .padding(.all, size.padding)
-            .clipShape(Circle())
+            .clipShape(shape)
             .background {
-                ButtonBackground(isPressed: configuration.isPressed, isOutlined: isOutlined, shape: Circle())
+                ButtonBackground(isPressed: configuration.isPressed, isOutlined: isOutlined, shape: shape)
             }
     }
 }
@@ -73,7 +82,7 @@ enum ButtonSize {
     var padding: CGFloat {
         switch self {
         case .small:
-            return 16
+            return 12
         case .medium:
             return 22
         case .large:
@@ -84,7 +93,7 @@ enum ButtonSize {
     var symbolSize: CGFloat {
         switch self {
         case .small:
-            return 20
+            return 16
         case .medium:
             return 24
         case .large:
