@@ -6,17 +6,22 @@ class Store: ObservableObject {
     
     @Published private(set) var products: [Product]
     @Published private(set) var purchasedProducts: [Product]
-    @Published private(set) var didRemoveAds: Bool
     
-    private let productIDs: Set<String> = [Tip.water.rawValue]
+    private let productIDs: Set<String> = {
+        var productIDsResult: Set<String> = []
+        
+        for tip in Tip.allCases {
+            productIDsResult.insert(tip.rawValue)
+        }
+        
+        return productIDsResult
+    }()
     
     private var transactionsUpdates: Task<Void, Never>? = nil
     
     init() {
         products = []
         purchasedProducts = []
-        
-        didRemoveAds = false
         
         listenToTransactionUpdates()
         
@@ -66,10 +71,7 @@ class Store: ObservableObject {
             Log.sharedInstance.log(message: "Adding \(purchasedProduct.id) to 'purchasedProducts'.")
             purchasedProducts.append(purchasedProduct)
             
-            if purchasedProduct.id == Tip.water.rawValue {
-                didRemoveAds = true
-                Log.sharedInstance.log(message: "Removed ads.")
-            }
+            // TODO: Deliver purchased product here.
         }
     }
     

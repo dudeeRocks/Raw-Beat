@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-enum Tip: String {
+enum Tip: String, CaseIterable {
     case water, coffee, beer
     
     var emoji: String {
