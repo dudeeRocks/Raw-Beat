@@ -32,6 +32,23 @@ struct ShopView: View {
                 }
             }
         }
+        .onInAppPurchaseCompletion { product, result in
+            switch result {
+            case .success(let purchaseResult):
+                do {
+                    if try await store.purchase(product: product, purchaseResult: purchaseResult) {
+                        // TODO: Show Thank You note here
+                        Log.sharedInstance.log(message: "ShopView registered successful purchase of '\(product.id)' \(Tip(rawValue: product.id)?.emoji ?? "😀")")
+                    }
+                } catch {
+                    // TODO: Show alert to user.
+                    Log.sharedInstance.log(error: "Failed to purchase '\(product.id)'. Error: \(error.localizedDescription)")
+                }
+            case .failure(let purchaseError):
+                // TODO: Show alert to user.
+                Log.sharedInstance.log(error: "Failed to purchase '\(product.id)'. Error: \(purchaseError.localizedDescription)")
+            }
+        }
     }
     
     private func emoji(for product: Product) -> String {

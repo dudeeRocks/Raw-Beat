@@ -36,22 +36,25 @@ class Store: ObservableObject {
         stopListeningForTransactionUpdates()
     }
     
-    func purchase(product: Product) async throws {
-        let purchaseResult: Product.PurchaseResult = try await product.purchase()
+    /// Function that handles purchases from UI.
+    /// Returns `true` if `Product.PurchaseResult` is `.success`.
+    /// The return value of this function determines whether the Thank you note will be presented.
+    func purchase(product: Product, purchaseResult: Product.PurchaseResult) async throws -> Bool {
         switch purchaseResult {
         case .success(let verificationResult):
             let transaction = try verify(transaction: verificationResult)
             await process(transaction)
             await transaction.finish()
             Log.sharedInstance.log(message: "Purchase success. Product: \(product.id)")
+            return true
         case .pending:
             Log.sharedInstance.log(message: "Purchase is pending.")
-            break
+            return false
         case .userCancelled:
             Log.sharedInstance.log(message: "The user canceled the purchase.")
-            break
+            return false
         @unknown default:
-            break
+            return false
         }
     }
     
