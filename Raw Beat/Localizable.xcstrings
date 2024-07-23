@@ -232,6 +232,9 @@
         }
       }
     },
+    "Hello!" : {
+
+    },
     "Hi Hat" : {
       "comment" : "Accessibility label for sound.",
       "localizations" : {

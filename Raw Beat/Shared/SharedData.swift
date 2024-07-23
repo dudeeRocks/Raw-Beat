@@ -221,7 +221,7 @@ struct SharedData {
         
         var symbol: String {
             switch self {
-            case .keepTapping:
+            case .keepTapping, .firstTimeExperience:
                 "hand.tap.fill"
             case .longPress:
                 "dot.circle.and.hand.point.up.left.fill"

@@ -95,6 +95,9 @@ struct ContentView: View {
             BeatsVisualizer(model: beatsParticleSystem, sharedData: $sharedData)
             
             VStack {
+                
+                Header()
+                
                 ZStack {
                     Color.clear
                     
