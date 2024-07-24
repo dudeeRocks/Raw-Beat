@@ -1,7 +1,6 @@
 // Abstract: model of a particle for beats for play animation
 
 import SwiftUI
-import os
 
 struct Beat: Particle {
     

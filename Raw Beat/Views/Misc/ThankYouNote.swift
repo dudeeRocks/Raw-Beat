@@ -33,7 +33,7 @@ struct ThankYouNote: View {
                 VStack(alignment: .center, spacing: 40.0) {
                     // MARK: Emoji and Hearts
                     ZStack {
-                        // TODO: HeartsVisualizer()
+                        HeartsVisualizer()
                         Image(systemName: "heart.fill")
                             .font(.system(size: 70.0, weight: .black))
                             .foregroundStyle(Color.accent)

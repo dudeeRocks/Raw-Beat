@@ -4,7 +4,7 @@ import SwiftUI
 
 extension Color {
     static let accentColor: Color = Color("AccentColor")
-    static let primaryColor: Color = Color("PrimaryColor")
+    static let primaryColor: Color = Color("TextColor")
     static let backgroundColor: Color = Color("BackgroundColor")
     
     // MARK: Button Colors
