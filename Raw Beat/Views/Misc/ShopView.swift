@@ -10,34 +10,22 @@ struct ShopView: View {
     
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     
-    private var isCompact: Bool {
-        horizontalSizeClass == .compact
-    }
+    private var isCompact: Bool { horizontalSizeClass == .compact }
     
     var body: some View {
-        VStack(alignment: .center, spacing: 20.0) {
-            VStack(spacing: isCompact ? 12.0 : 16.0) {
-                ForEach(store.products.sorted(by: { $0.price < $1.price })) { product in
-                    ProductView(product) { // TODO: try making it a custom view with a button that calls store.purchase and see if this works with .fullScreenCover modifier.
-                        Text(emoji(for: product))
-                            .font(.system(size: 32.0))
-                            .padding(isCompact ? 6.0 : 12.0)
-                            .background(Color.gradientEndColor.opacity(0.5), in: Circle())
-                    }
-                    .productViewStyle(.compact)
-                    .buttonStyle(CustomButton(isOutlined: false, size: .small, shape: Capsule()))
-                    Divider()
+        VStack(spacing: isCompact ? 12.0 : 16.0) {
+            ForEach(store.products.sorted(by: { $0.price < $1.price })) { product in
+                ProductView(product) { // TODO: try making it a custom view with a button that calls store.purchase and see if this works with .fullScreenCover modifier.
+                    Text(emoji(for: product))
+                        .font(.system(size: 32.0))
+                        .padding(isCompact ? 6.0 : 12.0)
+                        .background(Color.gradientEndColor.opacity(0.5), in: Circle())
                 }
-            }
-            
-            if !store.purchasedProducts.isEmpty { // FIXME: purchasedProducts is empty on app relaunch. Check why this is happening.
-                HStack {
-                    Text("Drinks treated:")
-                    Spacer()
-                    Text("\(store.purchasedProducts.count)")
-                }
-                .padding()
-                .background(.secondary.opacity(0.5), in: RoundedRectangle(cornerRadius: 8.0))
+                .productViewStyle(.compact)
+                .buttonStyle(CustomButton(isOutlined: false, size: .small, shape: Capsule()))
+                Rectangle()
+                    .fill(Color.primaryColor.opacity(0.5))
+                    .frame(height: 0.5)
             }
         }
         .onInAppPurchaseCompletion { product, result in

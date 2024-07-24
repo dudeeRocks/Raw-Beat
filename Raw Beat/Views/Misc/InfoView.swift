@@ -101,8 +101,9 @@ struct InfoView: View {
                     // MARK: - Support links
                     HStack(spacing: 10.0) {
                         Link("Privacy Policy", destination: URL(string: "https://dudee.rocks/raw-beat-privacy-policy/")!)
-                        Divider()
-                            .frame(height: 10.0)
+                        Rectangle()
+                            .fill(Color.primaryColor.opacity(0.5))
+                            .frame(width: 0.5)
                         Link("Contact Support", destination: URL(string: "https://dudee.rocks/raw-beat-support/")!)
                     }
                     .font(.caption)

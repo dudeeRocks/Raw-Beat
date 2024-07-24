@@ -6,6 +6,8 @@ struct ThankYouNote: View {
     @Binding var isPresented: Bool
     let tip: Tip
     
+    @State private var isSlideUp: Bool = false
+    
     private let padding: EdgeInsets = .init(top: 30.0,
                                             leading: 30.0,
                                             bottom: 50.0,
@@ -22,11 +24,9 @@ struct ThankYouNote: View {
         }
     }
     
-    @State private var isSlideUp: Bool = false
-    
     var body: some View {
         ZStack {
-            Color.primaryColor // FIXME: Gotta change the color in dark mode
+            Color.black // FIXME: Gotta change the color in dark mode
                 .opacity(0.75)
                 .ignoresSafeArea()
             ZStack {
@@ -38,7 +38,7 @@ struct ThankYouNote: View {
                             .font(.system(size: 70.0, weight: .black))
                             .foregroundStyle(Color.accent)
                             .symbolEffect(.bounce, options: .repeating, isActive: true)
-                            .shadow(color: Color.gradientStartColor, radius: 5.0, x: 0.0, y: 0.0)
+                            .shadow(color: Color.white.opacity(0.5), radius: 5.0, x: 0.0, y: 0.0)
                     }
                     .frame(height: 180.0, alignment: .center)
                     
