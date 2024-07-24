@@ -16,7 +16,7 @@ struct ShopView: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 20.0) {
-            VStack(spacing: isCompact ? 8.0 : 12.0) {
+            VStack(spacing: isCompact ? 12.0 : 16.0) {
                 ForEach(store.products.sorted(by: { $0.price < $1.price })) { product in
                     ProductView(product) { // TODO: try making it a custom view with a button that calls store.purchase and see if this works with .fullScreenCover modifier.
                         Text(emoji(for: product))
@@ -25,14 +25,8 @@ struct ShopView: View {
                             .background(Color.gradientEndColor.opacity(0.5), in: Circle())
                     }
                     .productViewStyle(.compact)
-                    .padding(.horizontal, isCompact ? 8.0 : 16.0)
-                    .padding(.vertical, isCompact ? 4.0 : 8.0)
                     .buttonStyle(CustomButton(isOutlined: false, size: .small, shape: Capsule()))
-                    .overlay {
-                        RoundedRectangle(cornerRadius: 16.0)
-                            .fill(.clear)
-                            .stroke(Color.secondary, lineWidth: 1.0)
-                    }
+                    Divider()
                 }
             }
             

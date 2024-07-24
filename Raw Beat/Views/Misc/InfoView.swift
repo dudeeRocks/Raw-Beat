@@ -63,7 +63,7 @@ struct InfoView: View {
                         .frame(maxWidth: 500.0)
                     
                     // MARK: - Tip Card
-                    VStack(alignment: .center, spacing: 30.0) {
+                    VStack(alignment: .center, spacing: 20.0) {
                         VStack(alignment: .leading, spacing: isCompact ? 5.0 : 10.0) {
                             Text("Tip the developer")
                                 .font(.title3)
