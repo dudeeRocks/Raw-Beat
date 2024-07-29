@@ -37,6 +37,8 @@ struct InfoView: View {
     
     var body: some View {
         ZStack {
+            LinearGradient(colors: .gradientStartColor, .gradientEndColor)
+                .ignoresSafeArea()
             ScrollView {
                 VStack(alignment: .center, spacing: 30.0) {
                     
@@ -125,13 +127,14 @@ struct InfoView: View {
                 .foregroundStyle(Color.primaryColor)
                 .padding(EdgeInsets(top: 60.0, leading: globalPadding, bottom: globalPadding, trailing: globalPadding))
             }
-            
-            if isThanksShown {
-                if let tip = purchasedTip {
-                    ThankYouNote(isPresented: $isThanksShown, tip: tip)
-                        .zIndex(1000)
-                }
-            }
+        }
+        .fullScreenCover(item: $purchasedTip) { tip in
+            ThankYouNote(tip: tip, onDismiss: { purchasedTip = nil })
         }
     }
+}
+
+#Preview {
+    @StateObject var store = Store()
+    return InfoView().environmentObject(store)
 }

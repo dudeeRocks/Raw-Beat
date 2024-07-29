@@ -97,6 +97,7 @@ struct ContentView: View {
             VStack {
                 
                 Header()
+                    .opacity(isAnyPickerOpen ? 0.0 : 1.0)
                 
                 ZStack {
                     Color.clear

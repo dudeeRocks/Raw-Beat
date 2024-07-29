@@ -8,6 +8,7 @@ struct Header: View {
     
     @State private var isSheetPresented: Bool = false
     @State private var sheetHeight: CGFloat = .zero
+    @State private var purchasedTip: Tip? = nil
     
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     private var padding: EdgeInsets {
@@ -30,31 +31,10 @@ struct Header: View {
             .sheet(isPresented: $isSheetPresented) {
                 InfoView()
                     .environmentObject(store)
-                    .overlay {
-                        GeometryReader { geometry in
-                            Color.clear.preference(key: InfoViewHeight.self, value: geometry.size.height)
-                        }
-                    }
-                    .onPreferenceChange(InfoViewHeight.self, perform: { value in
-                        sheetHeight = value
-                    })
                     .presentationDragIndicator(.visible)
-                    .presentationCornerRadius(24.0)
-                    .presentationBackground {
-                        LinearGradient(colors: .gradientStartColor, .gradientEndColor)
-                            .opacity(0.3)
-                            .background(.ultraThinMaterial)
-                    }
             }
         }
         .padding(padding)
-    }
-}
-
-struct InfoViewHeight: PreferenceKey {
-    static var defaultValue: CGFloat = .zero
-    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
-        value = nextValue()
     }
 }
 

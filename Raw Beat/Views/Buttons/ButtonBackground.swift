@@ -46,9 +46,9 @@ struct ButtonBackground<S: Shape>: View {
                 }
                 shape
                     .fill(Color.accentColor.shadow(.inner(color: .black.opacity(0.5), radius: 4, x: 2, y: 2)))
-                    .scaleEffect(isPressed ? 0.95 : 0.001)
+                    .scaleEffect(isPressed ? 1.0 : 0.001)
                     .opacity(isPressed ? 1.0 : 0.0)
-                    .animation(.easeIn(duration: 0.25).delay(0.05), value: isPressed)
+                    .animation(.easeIn(duration: 0.15), value: isPressed)
             }
         }
     }

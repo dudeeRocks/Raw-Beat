@@ -2,8 +2,10 @@
 
 import SwiftUI
 
-enum Tip: String, CaseIterable {
+enum Tip: String, CaseIterable, Identifiable {
     case water, coffee, beer
+    
+    var id: String { UUID().uuidString }
     
     var emoji: String {
         switch self {

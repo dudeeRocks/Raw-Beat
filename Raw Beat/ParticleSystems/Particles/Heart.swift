@@ -38,7 +38,7 @@ struct Heart: Particle {
         let timeSinceCreation: Double = currentTime - creationTime
         let normalizedTime: Double = timeSinceCreation / lifetime
 
-        scale = quadraticAnimation(time: normalizedTime, from: 0.0, to: 2.0)
+        scale = quadraticAnimation(time: normalizedTime, from: 0.0, to: 1.0)
         opacity = quadraticAnimation(time: normalizedTime, from: 1.0, to: 0.0)
         location.x = quadraticAnimation(time: normalizedTime, from: centerPoint.x, to: endLocation.x)
         location.y = quadraticAnimation(time: normalizedTime, from: centerPoint.y, to: endLocation.y)
