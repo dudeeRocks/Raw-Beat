@@ -60,6 +60,7 @@
 		633B59E72BBAD9A100065CD7 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 633B59E62BBAD9A100065CD7 /* Localizable.xcstrings */; };
 		638A872F2BC67F8B00239CBB /* tapSound.aif in Resources */ = {isa = PBXBuildFile; fileRef = 638A872E2BC67F8B00239CBB /* tapSound.aif */; };
 		638A87312BC681F900239CBB /* TapSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A87302BC681F900239CBB /* TapSoundPlayer.swift */; };
+		FA5253532C57C2A5008B7376 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5253522C57C2A5008B7376 /* StoreKit.framework */; };
 		FAB4A06C2C50C022003AF637 /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4A06B2C50C022003AF637 /* Heart.swift */; };
 		FAB4A06E2C50C501003AF637 /* HeartsParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4A06D2C50C501003AF637 /* HeartsParticleSystem.swift */; };
 		FAB4A0702C50C56C003AF637 /* HeartsVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4A06F2C50C56C003AF637 /* HeartsVisualizer.swift */; };
@@ -147,6 +148,8 @@
 		633B59E62BBAD9A100065CD7 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		638A872E2BC67F8B00239CBB /* tapSound.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = tapSound.aif; sourceTree = "<group>"; };
 		638A87302BC681F900239CBB /* TapSoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapSoundPlayer.swift; sourceTree = "<group>"; };
+		FA5253522C57C2A5008B7376 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		FA5253542C57D90C008B7376 /* SyncedProducts.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = SyncedProducts.storekit; sourceTree = "<group>"; };
 		FAB4A06B2C50C022003AF637 /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
 		FAB4A06D2C50C501003AF637 /* HeartsParticleSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartsParticleSystem.swift; sourceTree = "<group>"; };
 		FAB4A06F2C50C56C003AF637 /* HeartsVisualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartsVisualizer.swift; sourceTree = "<group>"; };
@@ -166,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5253532C57C2A5008B7376 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +198,7 @@
 				633B59182BB9810100065CD7 /* Raw BeatTests */,
 				633B59222BB9810100065CD7 /* Raw BeatUITests */,
 				633B59062BB980FD00065CD7 /* Products */,
+				FA5253512C57C2A5008B7376 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -377,11 +382,20 @@
 			path = Particles;
 			sourceTree = "<group>";
 		};
+		FA5253512C57C2A5008B7376 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA5253522C57C2A5008B7376 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAFE6BDA2C4FA4FC001D03FF /* Store */ = {
 			isa = PBXGroup;
 			children = (
 				FAFE6BDB2C4FA513001D03FF /* Store.swift */,
 				FAFE6BE32C4FAA5C001D03FF /* Products.storekit */,
+				FA5253542C57D90C008B7376 /* SyncedProducts.storekit */,
 				FAFE6BE42C4FAD39001D03FF /* StoreKitTestCertificate.cer */,
 				FAFE6BDF2C4FA6CC001D03FF /* Tip.swift */,
 			);
