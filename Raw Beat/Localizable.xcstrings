@@ -1250,6 +1250,9 @@
         }
       }
     },
+    "Visit developer site" : {
+      "comment" : "Accessibility label for dudee logo."
+    },
     "Woodblock" : {
       "comment" : "Accessibility label for sound.",
       "localizations" : {

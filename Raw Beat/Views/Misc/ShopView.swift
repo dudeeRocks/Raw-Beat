@@ -24,6 +24,7 @@ struct ShopView: View {
                         .font(.system(size: 32.0))
                         .padding(isCompact ? 6.0 : 12.0)
                         .background(Color.gradientEndColor.opacity(0.5), in: Circle())
+                        .accessibilityHidden(true)
                 }
                 .productViewStyle(.compact)
                 .buttonStyle(CustomButton(isOutlined: false, size: .small, shape: Capsule()))

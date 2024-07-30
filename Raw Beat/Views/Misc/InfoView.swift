@@ -57,6 +57,7 @@ struct InfoView: View {
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }
+                    .accessibilityHidden(true)
                     
                     Text(InfoViewText.about.text)
                         .fontWeight(.medium)
@@ -116,6 +117,7 @@ struct InfoView: View {
                     VStack(alignment: .center, spacing: 5.0) {
                         Text(String(localized: "Developed by", comment: "Text above Dudee logo on Info sheet."))
                             .font(.caption)
+                            .accessibilityHidden(true)
                         Link(destination: URL(string: "https://dudee.rocks")!, label: {
                             Image("dudee_logo")
                                 .renderingMode(.template)
@@ -123,6 +125,7 @@ struct InfoView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .frame(height: isCompact ? 20.0 : 30.0)
                                 .foregroundStyle(Color.primaryColor)
+                                .accessibilityLabel(String(localized: "Visit developer site", comment: "Accessibility label for dudee logo."))
                         })
                     }
                 }
