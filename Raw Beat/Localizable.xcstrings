@@ -1,9 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "" : {
-
-    },
     "%@ beats per minute" : {
       "comment" : "Tempo accessibility value.",
       "localizations" : {
@@ -119,12 +116,6 @@
         }
       }
     },
-    "Back to work!" : {
-
-    },
-    "Caffeine Buddy!" : {
-
-    },
     "Cancel" : {
       "comment" : "Accessibility label for button to cancel tempo input.",
       "localizations" : {
@@ -154,11 +145,34 @@
         }
       }
     },
-    "Cheers to you!" : {
-
-    },
     "Cheers!" : {
-
+      "comment" : "Button text on Thank you note. Closes the note.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prost!"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "לחיים!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На здоровье!"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Будьмо!"
+          }
+        }
+      }
     },
     "Close picker" : {
       "comment" : "Picker's close button accessibility label",
@@ -190,7 +204,32 @@
       }
     },
     "Contact Support" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Support kontaktieren"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "צור קשר"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддержка"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Підтримка"
+          }
+        }
+      }
     },
     "Current tempo" : {
       "comment" : "Tempo accessibility label.",
@@ -222,10 +261,62 @@
       }
     },
     "Developed by" : {
-
+      "comment" : "Text above Dudee logo on Info sheet.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entwickelt von"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פותח על ידי"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разработано"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розроблено"
+          }
+        }
+      }
     },
     "Failed to complete the purchase of '%@'. Please try again later." : {
-
+      "comment" : "Error message on failed purchase.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Kauf von '%@' konnte nicht abgeschlossen werden. Bitte versuche es später noch einmal."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "נכשל להשלים את הרכישה של '%@'. נא לנסות שוב מאוחר יותר.\n"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось завершить покупку '%@'. Пожалуйста, попробуйте позже."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не вдалося завершити покупку '%@'. Будь ласка, спробуйте пізніше."
+          }
+        }
+      }
     },
     "Four fourth" : {
       "comment" : "Accessibility label for time signature.",
@@ -286,7 +377,33 @@
       }
     },
     "I don't run ads in this app, and it's free for you forever. If you find it useful, please consider treating me to a drink." : {
-
+      "comment" : "Tip card description. Explains my reasoning behind tips feature.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ich schalte keine Werbung in dieser App und sie ist für dich für immer kostenlos. Wenn du sie nützlich findest, überlege bitte, mir einen Drink auszugeben."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אני לא מציג פרסומות באפליקציה הזו, והיא חינמית עבורך לנצח. אם אתם מוצאו אותה שימושית, אנא תשקלו לפנק אותי במשקה.\n"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Я не размещаю рекламу в этом приложении, и оно всегда будет для вас бесплатным. Если вы находите его полезным, пожалуйста, рассмотрите возможность угостить меня напитком."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Я не розміщую рекламу в цьому додатку, і він завжди буде безкоштовним для вас. Якщо ви вважаєте його корисним, будь ласка, розгляньте можливість пригостити мене напоєм."
+          }
+        }
+      }
     },
     "Keep tapping..." : {
       "comment" : "Tells users to keep tapping to set up tempo.",
@@ -345,9 +462,6 @@
           }
         }
       }
-    },
-    "M'kay" : {
-
     },
     "Maximum tempo is %lld BPM." : {
       "comment" : "Invalid input error.",
@@ -408,19 +522,147 @@
       }
     },
     "Note: These purchases won't unlock any features, but they'll help support the app's development." : {
-
+      "comment" : "Note that explains that Tip IAP won't unlock features.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hinweis: Diese Käufe schalten keine Funktionen frei, aber sie helfen, die Entwicklung der App zu unterstützen.\n"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שימו לב הרכישות הללו לא יפתחו אף תכונה, אך הן יסייעו לתמוך בפיתוח האפליקציה.\n"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Примечание: Эти покупки не разблокируют никаких функций, но они помогут поддержать разработку приложения."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Примітка: Ці покупки не відкриють жодних функцій, але вони допоможуть підтримати розробку додатка."
+          }
+        }
+      }
     },
-    "OK" : {
-
+    "Okay" : {
+      "comment" : "Button text on failed purchase alert.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Okay"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אוקיי"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готово"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Гаразд"
+          }
+        }
+      }
     },
     "Privacy Policy" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datenschutzerklärung"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מדיניות פרטיות"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Приватнось"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Приватнiсть"
+          }
+        }
+      }
     },
     "Purchase failed" : {
-
+      "comment" : "Title of the error message on failed purchase.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kauf fehlgeschlagen"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הרכישה נכשלה"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Покупка не удалась"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не вдалося завершити покупку"
+          }
+        }
+      }
     },
     "Raw Beat" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raw Beat"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raw Beat"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raw Beat"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raw Beat"
+          }
+        }
+      }
     },
     "Set tempo" : {
       "comment" : "Accessibility label for button submit tempo input.",
@@ -689,14 +931,121 @@
         }
       }
     },
-    "Thank you so much! This pint is the perfect fuel for my coding adventures." : {
-
+    "Thank you for the hydration boost!" : {
+      "comment" : "Description on thank you note for 'water' tip.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danke für den Hydrationsschub!"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "תודה על החידוש"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спасибо! Я очень ценю Вашу поддержку."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дякую! Я дуже ціную Вашу підтримку."
+          }
+        }
+      }
+    },
+    "Thank you for the perfect fuel for my coding." : {
+      "comment" : "Description on thank you note for 'beer' tip.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danke für den perfekten Treibstoff für mein Programmieren."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "תודה על הדלק המושלם לקוד שלי"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спасибо большое! Выпью за Ваше здоровье!"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дякую дуже! Вип’ю за Ваше здоров’я!"
+          }
+        }
+      }
+    },
+    "Thank you! This coffee keeps me buzzing!" : {
+      "comment" : "Description on thank you note for 'coffee' tip.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danke! Dieser Kaffee hält mich wach!"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הקפה הזה מחזיק אותי ערני"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спасибо за заряд бодрости!"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дякую за заряд бадьорості!"
+          }
+        }
+      }
     },
     "Thanks for downloading Raw Beat—a simple metronome designed and developed by an amateur musician." : {
-
-    },
-    "Thanks for the hydration boost! My code is flowing smoother already." : {
-
+      "comment" : "Text about the app in Info sheet.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danke, dass du Raw Beat heruntergeladen hast—ein einfaches Metronom, das von einem Amateurmusiker entworfen und entwickelt wurde."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "תודה שהורדת את רוביט. מטרונום פשוט שפותח על ידי מוזיקאי חובב"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спасибо за скачивание Raw Beat—простого метронома, разработанного и созданного любителем-музыкантом."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Дякуємо, що завантажили Raw Beat—простий метроном, розроблений і створений музикантом аматором."
+          }
+        }
+      }
     },
     "Three fourth" : {
       "comment" : "Accessibility label for time signature.",
@@ -786,7 +1135,33 @@
       }
     },
     "Tip the developer" : {
-
+      "comment" : "Title of the 'tip the developer' card.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Den Entwickler unterstützen"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "טיפ למפתח"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддержать разработчика"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Підтримайте розробника"
+          }
+        }
+      }
     },
     "Triple tap to edit the value." : {
       "comment" : "Tempo accessibility hint.",
@@ -846,6 +1221,35 @@
         }
       }
     },
+    "Version %@" : {
+      "comment" : "Version of the app as shown in Info sheet.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ausführung %@"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "גרסה %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Версия %@"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Версiя %@"
+          }
+        }
+      }
+    },
     "Woodblock" : {
       "comment" : "Accessibility label for sound.",
       "localizations" : {
@@ -881,11 +1285,92 @@
         }
       }
     },
-    "You're a lifesaver!" : {
-
+    "You rock!" : {
+      "comment" : "Title on thank you note for 'water' tip.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du rockst!"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אתם נהדרים!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы молодец!"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ви молодець!"
+          }
+        }
+      }
     },
-    "You're the best! This coffee is just what I needed to keep coding through the night." : {
-
+    "You're amazing!" : {
+      "comment" : "Title on thank you note for 'coffee' tip.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du bist großartig!"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אתם מדהימים!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы замечательны!"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ви чудові!"
+          }
+        }
+      }
+    },
+    "You're awesome!" : {
+      "comment" : "Title on thank you note for 'beer' tip.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du bist fantastisch!"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אתם מדהימים!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы великолепны!"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ви неймовірні!"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

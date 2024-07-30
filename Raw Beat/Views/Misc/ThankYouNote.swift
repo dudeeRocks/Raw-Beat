@@ -11,17 +11,6 @@ struct ThankYouNote: View {
                                             bottom: 50.0,
                                             trailing: 30.0)
     
-    private var buttonText: LocalizedStringKey {
-        switch tip {
-        case .water:
-            return "M'kay"
-        case .coffee:
-            return "Back to work!"
-        case .beer:
-            return "Cheers!"
-        }
-    }
-    
     var body: some View {
         ZStack {
             LinearGradient(colors: .gradientStartColor, .gradientEndColor)
@@ -53,7 +42,7 @@ struct ThankYouNote: View {
                     Button {
                         onDismiss()
                     } label: {
-                        Text(buttonText)
+                        Text(String(localized: "Cheers!", comment: "Button text on Thank you note. Closes the note."))
                             .padding(.horizontal, 20)
                     }
                     .buttonStyle(CustomButton(isOutlined: false, size: .medium, shape: Capsule()))

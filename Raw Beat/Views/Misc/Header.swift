@@ -33,7 +33,6 @@ struct Header: View {
                     .environmentObject(store)
                     .onPreferenceChange(InfoViewHeight.self, perform: { value in
                         sheetHeight = value
-                        Log.sharedInstance.log(message: "InfoView sheet height is set to: \(sheetHeight)")
                     })
                     .presentationDragIndicator(.visible)
                     .presentationDetents([.height(sheetHeight)])

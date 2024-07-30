@@ -13,7 +13,8 @@ struct ShopView: View {
     private var isCompact: Bool { horizontalSizeClass == .compact }
     
     @State private var isAlertPresented: Bool = false
-    @State private var alertMessage: LocalizedStringKey = ""
+    @State private var alertMessage: String = ""
+    private let alertTitle: String = String(localized: "Purchase failed", comment: "Title of the error message on failed purchase.")
     
     var body: some View {
         VStack(spacing: isCompact ? 12.0 : 16.0) {
@@ -31,8 +32,8 @@ struct ShopView: View {
                     .frame(height: 0.5)
             }
         }
-        .alert("Purchase failed", isPresented: $isAlertPresented, actions: {
-            Button("OK") {
+        .alert(alertTitle, isPresented: $isAlertPresented, actions: {
+            Button(String(localized: "Okay", comment: "Button text on failed purchase alert.")) {
                 isAlertPresented = false
             }
         }, message: {
@@ -67,7 +68,7 @@ struct ShopView: View {
         }
     }
     
-    private func generateAlertMessage(for product: Product) -> LocalizedStringKey {
-        return "Failed to complete the purchase of '\(product.displayName)'. Please try again later."
+    private func generateAlertMessage(for product: Product) -> String {
+        return String(localized: "Failed to complete the purchase of '\(product.displayName)'. Please try again later.", comment: "Error message on failed purchase.")
     }
 }

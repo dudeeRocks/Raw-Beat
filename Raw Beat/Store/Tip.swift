@@ -18,17 +18,17 @@ enum Tip: String, CaseIterable, Identifiable {
         }
     }
     
-    var thankYouNoteContent: (title: LocalizedStringKey, description: LocalizedStringKey) {
+    var thankYouNoteContent: (title: String, description: String) {
         switch self {
         case .water:
-            return ("You're a lifesaver!",
-                    "Thanks for the hydration boost! My code is flowing smoother already.")
+            return (String(localized: "You rock!", comment: "Title on thank you note for 'water' tip."),
+                    String(localized: "Thank you for the hydration boost!", comment: "Description on thank you note for 'water' tip."))
         case .coffee:
-            return ("Caffeine Buddy!",
-                    "You're the best! This coffee is just what I needed to keep coding through the night.")
+            return (String(localized: "You're amazing!", comment: "Title on thank you note for 'coffee' tip."),
+                    String(localized: "Thank you! This coffee keeps me buzzing!", comment: "Description on thank you note for 'coffee' tip."))
         case .beer:
-            return ("Cheers to you!",
-                    "Thank you so much! This pint is the perfect fuel for my coding adventures.")
+            return (String(localized: "You're awesome!", comment: "Title on thank you note for 'beer' tip."),
+                    String(localized: "Thank you for the perfect fuel for my coding.", comment: "Description on thank you note for 'beer' tip."))
         }
     }
 }

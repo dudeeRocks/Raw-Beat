@@ -53,12 +53,12 @@ struct InfoView: View {
                         Text("Raw Beat")
                             .font(.title)
                             .fontWeight(.black)
-                        Text("Version " + appVersion)
+                        Text(String(localized: "Version \(appVersion)", comment: "Version of the app as shown in Info sheet."))
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }
                     
-                    Text("Thanks for downloading Raw Beat—a simple metronome designed and developed by an amateur musician.")
+                    Text(InfoViewText.about.text)
                         .fontWeight(.medium)
                         .fixedSize(horizontal: false, vertical: true)
                         .multilineTextAlignment(.center)
@@ -68,10 +68,10 @@ struct InfoView: View {
                     if !store.products.isEmpty {
                         VStack(alignment: .center, spacing: 20.0) {
                             VStack(alignment: .leading, spacing: isCompact ? 5.0 : 10.0) {
-                                Text("Tip the developer")
+                                Text(InfoViewText.tipCardTitle.text)
                                     .font(.title3)
                                     .fontWeight(.black)
-                                Text("I don't run ads in this app, and it's free for you forever. If you find it useful, please consider treating me to a drink.")
+                                Text(InfoViewText.tipCardDescription.text)
                                     .font(.callout)
                                     .fixedSize(horizontal: false, vertical: true)
                             }
@@ -88,7 +88,7 @@ struct InfoView: View {
                                 }
                             })
                             
-                            Text("Note: These purchases won't unlock any features, but they'll help support the app's development.")
+                            Text(InfoViewText.tipCardNote.text)
                                 .font(.caption)
                                 .fixedSize(horizontal: false, vertical: true)
                                 .multilineTextAlignment(.center)
@@ -114,7 +114,7 @@ struct InfoView: View {
                     
                     // MARK: - Developer logo
                     VStack(alignment: .center, spacing: 5.0) {
-                        Text("Developed by")
+                        Text(String(localized: "Developed by", comment: "Text above Dudee logo on Info sheet."))
                             .font(.caption)
                         Link(destination: URL(string: "https://dudee.rocks")!, label: {
                             Image("dudee_logo")
@@ -137,6 +137,23 @@ struct InfoView: View {
         }
         .fullScreenCover(item: $purchasedTip) { tip in
             ThankYouNote(tip: tip, onDismiss: { purchasedTip = nil })
+        }
+    }
+    
+    enum InfoViewText {
+        case about, tipCardTitle, tipCardDescription, tipCardNote
+        
+        var text: String {
+            switch self {
+            case .about:
+                return String(localized: "Thanks for downloading Raw Beat—a simple metronome designed and developed by an amateur musician.", comment: "Text about the app in Info sheet.")
+            case .tipCardTitle:
+                return String(localized: "Tip the developer", comment: "Title of the 'tip the developer' card.")
+            case .tipCardDescription:
+                return String(localized: "I don't run ads in this app, and it's free for you forever. If you find it useful, please consider treating me to a drink.", comment: "Tip card description. Explains my reasoning behind tips feature.")
+            case .tipCardNote:
+                return String(localized: "Note: These purchases won't unlock any features, but they'll help support the app's development.", comment: "Note that explains that Tip IAP won't unlock features.")
+            }
         }
     }
 }
