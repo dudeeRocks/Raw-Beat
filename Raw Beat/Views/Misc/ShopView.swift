@@ -12,10 +12,13 @@ struct ShopView: View {
     
     private var isCompact: Bool { horizontalSizeClass == .compact }
     
+    @State private var isAlertPresented: Bool = false
+    @State private var alertMessage: LocalizedStringKey = ""
+    
     var body: some View {
         VStack(spacing: isCompact ? 12.0 : 16.0) {
             ForEach(store.products.sorted(by: { $0.price < $1.price })) { product in
-                ProductView(product) { // TODO: try making it a custom view with a button that calls store.purchase and see if this works with .fullScreenCover modifier.
+                ProductView(product) {
                     Text(emoji(for: product))
                         .font(.system(size: 32.0))
                         .padding(isCompact ? 6.0 : 12.0)
@@ -28,6 +31,13 @@ struct ShopView: View {
                     .frame(height: 0.5)
             }
         }
+        .alert("Purchase failed", isPresented: $isAlertPresented, actions: {
+            Button("OK") {
+                isAlertPresented = false
+            }
+        }, message: {
+            Text(alertMessage)
+        })
         .onInAppPurchaseCompletion { product, result in
             switch result {
             case .success(let purchaseResult):
@@ -36,11 +46,13 @@ struct ShopView: View {
                         onPurchaseCompletion(product)
                     }
                 } catch {
-                    // TODO: Show alert to user.
-                    Log.sharedInstance.log(error: "Failed to purchase '\(product.id)'. Error: \(error.localizedDescription)")
+                    alertMessage = generateAlertMessage(for: product)
+                    isAlertPresented = true
+                    Log.sharedInstance.log(error: "Failed to complete purchase of '\(product.id)'. Error: \(error.localizedDescription)")
                 }
             case .failure(let purchaseError):
-                // TODO: Show alert to user.
+                alertMessage = generateAlertMessage(for: product)
+                isAlertPresented = true
                 Log.sharedInstance.log(error: "Failed to purchase '\(product.id)'. Error: \(purchaseError.localizedDescription)")
             }
         }
@@ -53,5 +65,9 @@ struct ShopView: View {
         } else {
             return "❓"
         }
+    }
+    
+    private func generateAlertMessage(for product: Product) -> LocalizedStringKey {
+        return "Failed to complete the purchase of '\(product.displayName)'. Please try again later."
     }
 }

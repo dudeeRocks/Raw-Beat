@@ -107,7 +107,7 @@
   ],
   "settings" : {
     "_applicationInternalID" : "6497230562",
-    "_billingIssuesEnabled" : true,
+    "_billingIssuesEnabled" : false,
     "_developerTeamID" : "3848NBBLP6",
     "_failTransactionsEnabled" : false,
     "_lastSynchronizedDate" : 743954703.91243899,

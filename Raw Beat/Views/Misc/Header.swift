@@ -31,10 +31,22 @@ struct Header: View {
             .sheet(isPresented: $isSheetPresented) {
                 InfoView()
                     .environmentObject(store)
+                    .onPreferenceChange(InfoViewHeight.self, perform: { value in
+                        sheetHeight = value
+                        Log.sharedInstance.log(message: "InfoView sheet height is set to: \(sheetHeight)")
+                    })
                     .presentationDragIndicator(.visible)
+                    .presentationDetents([.height(sheetHeight)])
             }
         }
         .padding(padding)
+    }
+}
+
+struct InfoViewHeight: PreferenceKey {
+    static var defaultValue: CGFloat = .zero
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
     }
 }
 

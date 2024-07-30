@@ -75,7 +75,11 @@ class Store: ObservableObject {
             Log.sharedInstance.log(message: "Adding \(purchasedProduct.id) to 'purchasedProducts'.")
             purchasedProducts.append(purchasedProduct)
             
-            // TODO: Deliver purchased product here.
+            // This is the place to deliver any products that need it.
+            if let tip = Tip(rawValue: purchasedProduct.id) {
+                // Tips don't provide any value to the user ATM
+                Log.sharedInstance.log(message: "Processed Tip: \(tip.emoji)")
+            }
         }
     }
     
@@ -97,7 +101,7 @@ class Store: ObservableObject {
                 let transaction = try verify(transaction: verificationResult)
                 process(transaction)
             } catch {
-                Log.sharedInstance.log(error: "\(#function) caught error: \(error.localizedDescription)")
+                Log.sharedInstance.log(error: "Failed to refresh purchased products. Error: \(error.localizedDescription)")
             }
         }
     }
@@ -113,7 +117,7 @@ class Store: ObservableObject {
                     
                     await transaction.finish()
                 } catch {
-                    Log.sharedInstance.log(error: "\(#function) caught error: \(error.localizedDescription)")
+                    Log.sharedInstance.log(error: "Failed to get transaction updates. Error: \(error.localizedDescription)")
                 }
             }
         }

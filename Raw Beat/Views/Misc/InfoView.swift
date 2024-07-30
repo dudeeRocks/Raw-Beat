@@ -65,40 +65,42 @@ struct InfoView: View {
                         .frame(maxWidth: 500.0)
                     
                     // MARK: - Tip Card
-                    VStack(alignment: .center, spacing: 20.0) {
-                        VStack(alignment: .leading, spacing: isCompact ? 5.0 : 10.0) {
-                            Text("Tip the developer")
-                                .font(.title3)
-                                .fontWeight(.black)
-                            Text("I don't run ads in this app, and it's free for you forever. If you find it useful, please consider treating me to a drink.")
-                                .font(.callout)
-                                .fixedSize(horizontal: false, vertical: true)
-                        }
-                        .frame(maxWidth: .infinity)
-                        .multilineTextAlignment(.leading)
-                        
-                        ShopView(onPurchaseCompletion: { product in
-                            if let tip = Tip(rawValue: product.id) {
-                                purchasedTip = tip
-                                withAnimation {
-                                    isThanksShown = true
-                                }
-                                Log.sharedInstance.log(message: "ShopView registered successful purchase of '\(product.id)' \(tip.emoji)")
+                    if !store.products.isEmpty {
+                        VStack(alignment: .center, spacing: 20.0) {
+                            VStack(alignment: .leading, spacing: isCompact ? 5.0 : 10.0) {
+                                Text("Tip the developer")
+                                    .font(.title3)
+                                    .fontWeight(.black)
+                                Text("I don't run ads in this app, and it's free for you forever. If you find it useful, please consider treating me to a drink.")
+                                    .font(.callout)
+                                    .fixedSize(horizontal: false, vertical: true)
                             }
-                        })
-                        
-                        Text("Note: These purchases won't unlock any features, but they'll help support the app's development.")
-                            .font(.caption)
-                            .fixedSize(horizontal: false, vertical: true)
-                            .multilineTextAlignment(.center)
+                            .frame(maxWidth: .infinity)
+                            .multilineTextAlignment(.leading)
+                            
+                            ShopView(onPurchaseCompletion: { product in
+                                if let tip = Tip(rawValue: product.id) {
+                                    purchasedTip = tip
+                                    withAnimation {
+                                        isThanksShown = true
+                                    }
+                                    Log.sharedInstance.log(message: "ShopView registered successful purchase of '\(product.id)' \(tip.emoji)")
+                                }
+                            })
+                            
+                            Text("Note: These purchases won't unlock any features, but they'll help support the app's development.")
+                                .font(.caption)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .multilineTextAlignment(.center)
+                        }
+                        .padding(isCompact ? 18.0 : 36.0)
+                        .background {
+                            Color.gradientStartColor
+                                .opacity(colorScheme == .dark ? 0.5 : 0.3)
+                                .background(.ultraThinMaterial)
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 20.0))
                     }
-                    .padding(isCompact ? 18.0 : 36.0)
-                    .background {
-                        Color.gradientStartColor
-                            .opacity(colorScheme == .dark ? 0.5 : 0.3)
-                            .background(.ultraThinMaterial)
-                    }
-                    .clipShape(RoundedRectangle(cornerRadius: 20.0))
                     
                     // MARK: - Support links
                     HStack(spacing: 10.0) {
@@ -126,6 +128,11 @@ struct InfoView: View {
                 }
                 .foregroundStyle(Color.primaryColor)
                 .padding(EdgeInsets(top: 60.0, leading: globalPadding, bottom: globalPadding, trailing: globalPadding))
+                .overlay {
+                    GeometryReader { geometry in
+                        Color.clear.preference(key: InfoViewHeight.self, value: geometry.size.height)
+                    }
+                }
             }
         }
         .fullScreenCover(item: $purchasedTip) { tip in

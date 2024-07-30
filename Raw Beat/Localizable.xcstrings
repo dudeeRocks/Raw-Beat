@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "%@ beats per minute" : {
       "comment" : "Tempo accessibility value.",
       "localizations" : {
@@ -221,6 +224,9 @@
     "Developed by" : {
 
     },
+    "Failed to complete the purchase of '%@'. Please try again later." : {
+
+    },
     "Four fourth" : {
       "comment" : "Accessibility label for time signature.",
       "localizations" : {
@@ -404,7 +410,13 @@
     "Note: These purchases won't unlock any features, but they'll help support the app's development." : {
 
     },
+    "OK" : {
+
+    },
     "Privacy Policy" : {
+
+    },
+    "Purchase failed" : {
 
     },
     "Raw Beat" : {
