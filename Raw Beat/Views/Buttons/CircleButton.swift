@@ -7,6 +7,7 @@ struct CircleButton<Label: View>: View {
     // MARK: Properties
     
     var isOutlined: Bool = false
+    var size: ButtonSize = .medium
     let action: () -> Void
     @ViewBuilder var label: () -> Label
     
@@ -16,10 +17,10 @@ struct CircleButton<Label: View>: View {
         Button {
             action()
         } label: {
-            SymbolContainer(frame: 24.0) {
+            SymbolContainer(frame: size.symbolSize) {
                 label()
             }
         }
-        .buttonStyle(CircleButtonStyle(isOutlined: isOutlined))
+        .buttonStyle(CustomButton(isOutlined: isOutlined, size: size, shape: Circle()))
     }
 }

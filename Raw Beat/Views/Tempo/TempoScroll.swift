@@ -96,8 +96,8 @@ struct TempoScroll: View {
     
     @ViewBuilder private func createTickMark(proxy: GeometryProxy) -> some View {
         MarkContainer(height: itemHeight, proxy: proxy) {
-            Rectangle()
-                .frame(width: 32, height: 2, alignment: .center)
+            RoundedRectangle(cornerRadius: 8)
+                .frame(width: 40, height: 4, alignment: .center)
                 .foregroundStyle(.tertiary)
         }
     }
@@ -105,7 +105,7 @@ struct TempoScroll: View {
     @ViewBuilder private func createTextMark(for value: Int, proxy: GeometryProxy) -> some View {
         MarkContainer(height: itemHeight, proxy: proxy) {
             Text("\(value)")
-                .font(.system(size: 40, weight: .light))
+                .font(.system(size: 50, weight: .regular))
                 .foregroundStyle(.secondary)
                 .frame(height: itemHeight)
         }
@@ -156,7 +156,7 @@ struct TempoScroll: View {
         } catch MetronomeError.newTempoMoreThanMaxTempo {
             metronome.tempo = Metronome.maxTempo
         } catch {
-            print(error.localizedDescription)
+            Log.sharedInstance.log(error: error.localizedDescription)
         }
     }
     

@@ -8,7 +8,7 @@ class TapSoundPlayer {
     
     init() {
         guard let sound = Bundle.main.url(forResource: "tapSound", withExtension: "aif") else {
-            print("Couldn't locate tap sound file.")
+            Log.sharedInstance.log(message: "Couldn't locate tap sound file.")
             player = nil
             return
         }
@@ -16,7 +16,7 @@ class TapSoundPlayer {
         do {
             player = try AVAudioPlayer(contentsOf: sound)
         } catch {
-            print(error.localizedDescription)
+            Log.sharedInstance.log(error: error.localizedDescription)
             player = nil
         }
     }

@@ -60,6 +60,17 @@
 		633B59E72BBAD9A100065CD7 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 633B59E62BBAD9A100065CD7 /* Localizable.xcstrings */; };
 		638A872F2BC67F8B00239CBB /* tapSound.aif in Resources */ = {isa = PBXBuildFile; fileRef = 638A872E2BC67F8B00239CBB /* tapSound.aif */; };
 		638A87312BC681F900239CBB /* TapSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A87302BC681F900239CBB /* TapSoundPlayer.swift */; };
+		FA5253532C57C2A5008B7376 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5253522C57C2A5008B7376 /* StoreKit.framework */; };
+		FAB4A06C2C50C022003AF637 /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4A06B2C50C022003AF637 /* Heart.swift */; };
+		FAB4A06E2C50C501003AF637 /* HeartsParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4A06D2C50C501003AF637 /* HeartsParticleSystem.swift */; };
+		FAB4A0702C50C56C003AF637 /* HeartsVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4A06F2C50C56C003AF637 /* HeartsVisualizer.swift */; };
+		FAFE6BD72C4F9C92001D03FF /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BD62C4F9C92001D03FF /* Header.swift */; };
+		FAFE6BD92C4F9FA9001D03FF /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BD82C4F9FA9001D03FF /* InfoView.swift */; };
+		FAFE6BDC2C4FA513001D03FF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BDB2C4FA513001D03FF /* Store.swift */; };
+		FAFE6BDE2C4FA575001D03FF /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BDD2C4FA575001D03FF /* Log.swift */; };
+		FAFE6BE02C4FA6CC001D03FF /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BDF2C4FA6CC001D03FF /* Tip.swift */; };
+		FAFE6BE22C4FA989001D03FF /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BE12C4FA989001D03FF /* ShopView.swift */; };
+		FAFE6BE72C4FD6DE001D03FF /* ThankYouNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE6BE62C4FD6DE001D03FF /* ThankYouNote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +147,19 @@
 		633B59E62BBAD9A100065CD7 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		638A872E2BC67F8B00239CBB /* tapSound.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = tapSound.aif; sourceTree = "<group>"; };
 		638A87302BC681F900239CBB /* TapSoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapSoundPlayer.swift; sourceTree = "<group>"; };
+		FA5253522C57C2A5008B7376 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		FA5253542C57D90C008B7376 /* SyncedProducts.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = SyncedProducts.storekit; sourceTree = "<group>"; };
+		FAB4A06B2C50C022003AF637 /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
+		FAB4A06D2C50C501003AF637 /* HeartsParticleSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartsParticleSystem.swift; sourceTree = "<group>"; };
+		FAB4A06F2C50C56C003AF637 /* HeartsVisualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartsVisualizer.swift; sourceTree = "<group>"; };
+		FAFE6BD62C4F9C92001D03FF /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		FAFE6BD82C4F9FA9001D03FF /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		FAFE6BDB2C4FA513001D03FF /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		FAFE6BDD2C4FA575001D03FF /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		FAFE6BDF2C4FA6CC001D03FF /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		FAFE6BE12C4FA989001D03FF /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		FAFE6BE32C4FAA5C001D03FF /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
+		FAFE6BE62C4FD6DE001D03FF /* ThankYouNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouNote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5253532C57C2A5008B7376 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +196,7 @@
 				633B59182BB9810100065CD7 /* Raw BeatTests */,
 				633B59222BB9810100065CD7 /* Raw BeatUITests */,
 				633B59062BB980FD00065CD7 /* Products */,
+				FA5253512C57C2A5008B7376 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,6 +222,7 @@
 				633B599C2BB9878300065CD7 /* Views */,
 				633B59BF2BB988A300065CD7 /* Shared */,
 				633B59822BB9855400065CD7 /* Metronome */,
+				FAFE6BDA2C4FA4FC001D03FF /* Store */,
 				633B59CC2BB988D300065CD7 /* ParticleSystems */,
 				633B598D2BB9863300065CD7 /* Sounds */,
 				633B590C2BB9810000065CD7 /* Assets.xcassets */,
@@ -284,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				633B59B72BB9887A00065CD7 /* BeatsVisualizer.swift */,
+				FAB4A06F2C50C56C003AF637 /* HeartsVisualizer.swift */,
 				633B59B62BB9887A00065CD7 /* TouchVisualizer.swift */,
 				633B59B52BB9887900065CD7 /* ParticleView.swift */,
 			);
@@ -306,6 +334,10 @@
 			children = (
 				633B59BC2BB9889200065CD7 /* ErrorMessage.swift */,
 				633B59BB2BB9889200065CD7 /* Hint.swift */,
+				FAFE6BD62C4F9C92001D03FF /* Header.swift */,
+				FAFE6BD82C4F9FA9001D03FF /* InfoView.swift */,
+				FAFE6BE12C4FA989001D03FF /* ShopView.swift */,
+				FAFE6BE62C4FD6DE001D03FF /* ThankYouNote.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -319,6 +351,7 @@
 				633B59C52BB988C500065CD7 /* Modifiers.swift */,
 				633B59C32BB988C500065CD7 /* SharedData.swift */,
 				633B59C42BB988C500065CD7 /* Styles.swift */,
+				FAFE6BDD2C4FA575001D03FF /* Log.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -328,6 +361,7 @@
 			children = (
 				633B59D82BB9893900065CD7 /* BeatsParticleSystem.swift */,
 				633B59D92BB9893900065CD7 /* TouchPaticleSystem.swift */,
+				FAB4A06D2C50C501003AF637 /* HeartsParticleSystem.swift */,
 				633B59CD2BB988E400065CD7 /* Particles */,
 			);
 			path = ParticleSystems;
@@ -341,8 +375,28 @@
 				633B59CF2BB9891500065CD7 /* Particle+Animations.swift */,
 				633B59D12BB9891500065CD7 /* Pulse.swift */,
 				633B59CE2BB9891400065CD7 /* Tap.swift */,
+				FAB4A06B2C50C022003AF637 /* Heart.swift */,
 			);
 			path = Particles;
+			sourceTree = "<group>";
+		};
+		FA5253512C57C2A5008B7376 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA5253522C57C2A5008B7376 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAFE6BDA2C4FA4FC001D03FF /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE6BDB2C4FA513001D03FF /* Store.swift */,
+				FAFE6BE32C4FAA5C001D03FF /* Products.storekit */,
+				FA5253542C57D90C008B7376 /* SyncedProducts.storekit */,
+				FAFE6BDF2C4FA6CC001D03FF /* Tip.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,13 +541,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFE6BD72C4F9C92001D03FF /* Header.swift in Sources */,
+				FAFE6BE02C4FA6CC001D03FF /* Tip.swift in Sources */,
+				FAFE6BDE2C4FA575001D03FF /* Log.swift in Sources */,
+				FAFE6BE22C4FA989001D03FF /* ShopView.swift in Sources */,
+				FAB4A06C2C50C022003AF637 /* Heart.swift in Sources */,
 				633B590B2BB980FD00065CD7 /* ContentView.swift in Sources */,
 				633B59A82BB9883800065CD7 /* PlayButton.swift in Sources */,
 				633B59882BB985AA00065CD7 /* Sound.swift in Sources */,
+				FAB4A0702C50C56C003AF637 /* HeartsVisualizer.swift in Sources */,
 				633B59AA2BB9883800065CD7 /* CircleButton.swift in Sources */,
 				633B59B22BB9886200065CD7 /* TempoField.swift in Sources */,
 				633B59B92BB9887A00065CD7 /* TouchVisualizer.swift in Sources */,
 				633B59D62BB9891500065CD7 /* Pulse.swift in Sources */,
+				FAFE6BD92C4F9FA9001D03FF /* InfoView.swift in Sources */,
 				633B59C72BB988C500065CD7 /* Colors.swift in Sources */,
 				633B59B12BB9886200065CD7 /* TempoMarking.swift in Sources */,
 				633B59D42BB9891500065CD7 /* Particle+Animations.swift in Sources */,
@@ -502,10 +563,12 @@
 				638A87312BC681F900239CBB /* TapSoundPlayer.swift in Sources */,
 				633B59AC2BB9883800065CD7 /* ButtonBackground.swift in Sources */,
 				633B59DB2BB9893900065CD7 /* TouchPaticleSystem.swift in Sources */,
+				FAB4A06E2C50C501003AF637 /* HeartsParticleSystem.swift in Sources */,
 				633B598A2BB985AA00065CD7 /* MetronomeError.swift in Sources */,
 				633B59BE2BB9889200065CD7 /* ErrorMessage.swift in Sources */,
 				633B598C2BB985AA00065CD7 /* Metronome.swift in Sources */,
 				633B59A92BB9883800065CD7 /* SymbolContainer.swift in Sources */,
+				FAFE6BDC2C4FA513001D03FF /* Store.swift in Sources */,
 				633B59A72BB9883800065CD7 /* CircleToggle.swift in Sources */,
 				633B59CA2BB988C500065CD7 /* Styles.swift in Sources */,
 				633B59C62BB988C500065CD7 /* Animations.swift in Sources */,
@@ -515,6 +578,7 @@
 				633B59892BB985AA00065CD7 /* MetronomeDelegate.swift in Sources */,
 				633B59E12BB989E100065CD7 /* CirclePicker.swift in Sources */,
 				633B59B82BB9887A00065CD7 /* ParticleView.swift in Sources */,
+				FAFE6BE72C4FD6DE001D03FF /* ThankYouNote.swift in Sources */,
 				633B59D72BB9891500065CD7 /* Beat.swift in Sources */,
 				633B598B2BB985AA00065CD7 /* TimeSignature.swift in Sources */,
 				633B599B2BB9876900065CD7 /* HapticsPlayer.swift in Sources */,

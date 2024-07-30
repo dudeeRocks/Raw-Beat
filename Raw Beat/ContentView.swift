@@ -95,6 +95,10 @@ struct ContentView: View {
             BeatsVisualizer(model: beatsParticleSystem, sharedData: $sharedData)
             
             VStack {
+                
+                Header()
+                    .opacity(isAnyPickerOpen ? 0.0 : 1.0)
+                
                 ZStack {
                     Color.clear
                     
@@ -181,7 +185,7 @@ struct ContentView: View {
                 sharedData.shakeTempoField()
                 hapticsPlayer.defaultFeedbackGenerator?.notificationOccurred(.error)
             } catch {
-                print(error.localizedDescription)
+                Log.sharedInstance.log(error: error.localizedDescription)
             }
         } else {
             do {
@@ -191,7 +195,7 @@ struct ContentView: View {
             } catch MetronomeError.newTempoMoreThanMaxTempo {
                 metronome.tempo = Metronome.maxTempo
             } catch {
-                print(error.localizedDescription)
+                Log.sharedInstance.log(error: error.localizedDescription)
                 return
             }
             sharedData.newTempo = metronome.tempo

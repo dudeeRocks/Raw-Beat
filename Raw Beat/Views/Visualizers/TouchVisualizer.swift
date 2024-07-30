@@ -52,7 +52,7 @@ struct TouchVisualizer: View {
                 case is Pulse:
                     return sharedData.safelyUnwrap(position: .tempoText)
                 default:
-                    print("Unknown particle. Returning CGPoint.zero.")
+                    Log.sharedInstance.log(message: "Unknown particle. Returning CGPoint.zero.")
                     return .zero
                 }
             }

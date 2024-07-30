@@ -1,0 +1,171 @@
+{
+  "identifier" : "A15CF94F",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "6587565919",
+      "localizations" : [
+        {
+          "description" : "!הרם לי את היום",
+          "displayName" : "כוס קפה",
+          "locale" : "he"
+        },
+        {
+          "description" : "Heb meinen Tag!",
+          "displayName" : "Tasse Kaffee",
+          "locale" : "de"
+        },
+        {
+          "description" : "Дай мне энергии!",
+          "displayName" : "Чашка кофе",
+          "locale" : "ru"
+        },
+        {
+          "description" : "Дай мені енергію!",
+          "displayName" : "Чашка кави",
+          "locale" : "uk"
+        },
+        {
+          "description" : "Boost my day!",
+          "displayName" : "Cup of Coffee",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "coffee",
+      "referenceName" : "Cup of coffee",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "6587563618",
+      "localizations" : [
+        {
+          "description" : "Erfrisch mich!",
+          "displayName" : "Glas Wasser",
+          "locale" : "de"
+        },
+        {
+          "description" : "Освіжи мене!",
+          "displayName" : "Склянка води",
+          "locale" : "uk"
+        },
+        {
+          "description" : "Refresh me!",
+          "displayName" : "Glass of Water",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "!רענן אותי",
+          "displayName" : "כוס מים",
+          "locale" : "he"
+        }
+      ],
+      "productID" : "water",
+      "referenceName" : "Glass of Water",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "6587567966",
+      "localizations" : [
+        {
+          "description" : "Підніми мій дух!",
+          "displayName" : "Кухоль пива",
+          "locale" : "uk"
+        },
+        {
+          "description" : "Подними мой дух!",
+          "displayName" : "Кружка пива",
+          "locale" : "ru"
+        },
+        {
+          "description" : "Heb meine Laune!",
+          "displayName" : "Pint Bier",
+          "locale" : "de"
+        },
+        {
+          "description" : "!ירים לי את הרוח",
+          "displayName" : "כוס בירה",
+          "locale" : "he"
+        },
+        {
+          "description" : "Lift my spirits!",
+          "displayName" : "Pint of Beer",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "beer",
+      "referenceName" : "Pint of Beer",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6497230562",
+    "_billingIssuesEnabled" : false,
+    "_developerTeamID" : "3848NBBLP6",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 743954703.91243899,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}
