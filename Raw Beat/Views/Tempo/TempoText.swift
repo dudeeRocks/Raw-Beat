@@ -36,7 +36,7 @@ struct TempoText: View {
             ZStack {
                 Circle()
                     .fill(Color.gradientStartColor)
-                    .frame(width: 100)
+                    .frame(width: 120)
                     .blur(radius: 15)
                     .opacity(isPressed ? 0.0 : 1.0)
                     .animation(.easeInOut(duration: 0.15), value: isPressed)

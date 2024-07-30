@@ -989,6 +989,9 @@
         }
       }
     },
+    "Thank you for the tip!" : {
+      "comment" : "A11y label on heart image on thank you note."
+    },
     "Thank you! This coffee keeps me buzzing!" : {
       "comment" : "Description on thank you note for 'coffee' tip.",
       "localizations" : {
