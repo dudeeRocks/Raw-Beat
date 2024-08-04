@@ -9,6 +9,9 @@ struct TempoText: View {
     @Binding var sharedData: SharedData
     @Binding var isPressed: Bool
     
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+    private var isCompact: Bool { horizontalSizeClass == .compact }
+    
     private var text: String {
         return "\(sharedData.newTempo)"
     }
@@ -36,7 +39,7 @@ struct TempoText: View {
             ZStack {
                 Circle()
                     .fill(Color.gradientStartColor)
-                    .frame(width: 120)
+                    .frame(width: isCompact ? 120 : 240)
                     .blur(radius: 15)
                     .opacity(isPressed ? 0.0 : 1.0)
                     .animation(.easeInOut(duration: 0.15), value: isPressed)

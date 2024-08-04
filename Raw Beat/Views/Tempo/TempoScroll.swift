@@ -13,6 +13,9 @@ struct TempoScroll: View {
     @Environment(\.colorScheme) private var colorScheme
     private var isDarkMode: Bool { colorScheme == .dark }
     
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+    private var isCompact: Bool { horizontalSizeClass == .compact }
+    
     @State private var isShowingScroll: Bool = false
     
     @State private var lastScrollTime: Double = 0
@@ -105,7 +108,7 @@ struct TempoScroll: View {
     @ViewBuilder private func createTextMark(for value: Int, proxy: GeometryProxy) -> some View {
         MarkContainer(height: itemHeight, proxy: proxy) {
             Text("\(value)")
-                .font(.system(size: 50, weight: .regular))
+                .font(.system(size: isCompact ? 50 : 80, weight: .regular))
                 .foregroundStyle(.secondary)
                 .frame(height: itemHeight)
         }
