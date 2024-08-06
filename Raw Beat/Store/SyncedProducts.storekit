@@ -20,11 +20,6 @@
           "locale" : "de"
         },
         {
-          "description" : "Дай мне энергии!",
-          "displayName" : "Чашка кофе",
-          "locale" : "ru"
-        },
-        {
           "description" : "Дай мені енергію!",
           "displayName" : "Чашка кави",
           "locale" : "uk"
@@ -33,6 +28,11 @@
           "description" : "Boost my day!",
           "displayName" : "Cup of Coffee",
           "locale" : "en_US"
+        },
+        {
+          "description" : "Дай мне энергии!",
+          "displayName" : "Чашка кофе",
+          "locale" : "ru"
         }
       ],
       "productID" : "coffee",
@@ -85,14 +85,14 @@
           "locale" : "ru"
         },
         {
-          "description" : "Heb meine Laune!",
-          "displayName" : "Pint Bier",
-          "locale" : "de"
-        },
-        {
           "description" : "!ירים לי את הרוח",
           "displayName" : "כוס בירה",
           "locale" : "he"
+        },
+        {
+          "description" : "Heb meine Laune!",
+          "displayName" : "Pint Bier",
+          "locale" : "de"
         },
         {
           "description" : "Lift my spirits!",
@@ -110,12 +110,15 @@
     "_billingIssuesEnabled" : false,
     "_developerTeamID" : "3848NBBLP6",
     "_failTransactionsEnabled" : false,
-    "_lastSynchronizedDate" : 743954703.91243899,
+    "_lastSynchronizedDate" : 744646567.92523205,
     "_locale" : "en_US",
     "_storefront" : "USA",
     "_storeKitErrors" : [
       {
-        "current" : null,
+        "current" : {
+          "index" : 2,
+          "type" : "generic"
+        },
         "enabled" : false,
         "name" : "Load Products"
       },
@@ -125,12 +128,18 @@
         "name" : "Purchase"
       },
       {
-        "current" : null,
+        "current" : {
+          "index" : 0,
+          "type" : "verification"
+        },
         "enabled" : false,
         "name" : "Verification"
       },
       {
-        "current" : null,
+        "current" : {
+          "index" : 2,
+          "type" : "generic"
+        },
         "enabled" : false,
         "name" : "App Store Sync"
       },
@@ -140,7 +149,10 @@
         "name" : "Subscription Status"
       },
       {
-        "current" : null,
+        "current" : {
+          "index" : 3,
+          "type" : "generic"
+        },
         "enabled" : false,
         "name" : "App Transaction"
       },

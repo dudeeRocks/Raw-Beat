@@ -19,6 +19,8 @@ class Store: ObservableObject {
     
     private var transactionsUpdates: Task<Void, Never>? = nil
     
+    private(set) var productRequestAttempts: Int = 0
+    
     init() {
         products = []
         purchasedProducts = []
@@ -63,9 +65,33 @@ class Store: ObservableObject {
         do {
             let loadedProducts: [Product] = try await Product.products(for: productIDs)
             products = loadedProducts
-            Log.sharedInstance.log(message: "Requested products.")
+            productRequestAttempts = 0
+            Log.sharedInstance.log(message: "✅ Successfully requested and loaded \(products.count) products.")
         } catch {
-            Log.sharedInstance.log(error: "Failed product request. Error: \(error.localizedDescription)")
+            Log.sharedInstance.log(error: "❌ Failed product request. Error: \(error.localizedDescription)")
+            switch productRequestAttempts {
+            case 0..<3:
+                productRequestAttempts += 1
+                retryRequestingProducts(after: 2)
+            case 3..<6:
+                productRequestAttempts += 1
+                retryRequestingProducts(after: 5)
+            case 6...10:
+                productRequestAttempts += 1
+                retryRequestingProducts(after: 60)
+            default:
+                Log.sharedInstance.log(error: "❌ Failed product request \(productRequestAttempts) times. Stopping retry mechanism now.")
+            }
+        }
+    }
+    
+    func retryRequestingProducts(after delay: TimeInterval?) {
+        Log.sharedInstance.log(message: "Retrying product request. Attempts: \(productRequestAttempts)")
+        Task {
+            if let delay = delay {
+                try await Task.sleep(for: .seconds(delay))
+            }
+            await requestProducts()
         }
     }
     

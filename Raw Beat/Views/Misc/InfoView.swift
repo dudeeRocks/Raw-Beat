@@ -138,6 +138,11 @@ struct InfoView: View {
                 }
             }
         }
+        .onAppear {
+            if store.products.isEmpty && store.productRequestAttempts > 10 {
+                store.retryRequestingProducts(after: 0)
+            }
+        }
         .fullScreenCover(item: $purchasedTip) { tip in
             ThankYouNote(tip: tip, onDismiss: { purchasedTip = nil })
         }
